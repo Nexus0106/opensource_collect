@@ -2,7 +2,7 @@
 {
     'name': 'Qweb Report Elements',
 
-    'version': '1.0',
+    'version': '17.1.0.0',
 
     'summary': 'Qweb Report Elements',
 
