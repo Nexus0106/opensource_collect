@@ -14,7 +14,7 @@
 
     'category': 'Reports',
 
-    'Author': 'Nexus',
+    'author': 'Nexus',
 
     'license': "LGPL-3",
 
@@ -34,5 +34,5 @@
 
     'auto_install': False,
 
-    'images': ['static/description/icon.png'],
+    'images': ['static/description/icon.jpg'],
 }
