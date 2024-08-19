@@ -34,5 +34,5 @@
 
     'auto_install': False,
 
-    'images': ['static/description/icon.jpg'],
+    'images': ['static/description/icon.png'],
 }
