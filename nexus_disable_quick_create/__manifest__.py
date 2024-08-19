@@ -25,7 +25,7 @@
 
     "assets": {
         "web.assets_backend": [
-            "disable_quick_create/static/src/js/fields.esm.js",
+            "nexus_disable_quick_create/static/src/js/fields.esm.js",
         ]
     },
 
