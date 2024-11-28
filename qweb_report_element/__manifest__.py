@@ -14,11 +14,11 @@
 
     'category': 'Reports',
 
-    'author': 'Nexus',
+    'author': 'NexOrionis Techsphere',
 
     'license': "LGPL-3",
 
-    'email': 'nexus.innovatech.yours@gmail.com',
+    'email': 'nexorionis.info@gmail.com',
 
     'depends': [
         'web',
