@@ -14,11 +14,11 @@
 
     'category': 'Reports',
 
-    'author': 'Nexus',
+    'author': 'NexOrionis Techsphere',
 
     'license': "LGPL-3",
 
-    'email': 'nexus.innovatech.yours@gmail.com',
+    'email': 'nexorionis.info@gmail.com',
 
     'depends': [
         'web',
@@ -34,5 +34,5 @@
 
     'auto_install': False,
 
-    'images': ['static/description/icon.png'],
+    'images': ['static/description/banner.png'],
 }

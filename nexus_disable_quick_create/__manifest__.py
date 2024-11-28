@@ -6,11 +6,11 @@
 
     'summary': 'Disable Easy Create',
 
-    'author': 'Nexus',
+    'author': 'NexOrionis Techsphere',
 
     'license': "LGPL-3",
 
-    'email': 'nexus.innovatech.yours@gmail.com',
+    'email': 'nexorionis.info@gmail.com',
 
     'category': 'Technichal/Settings',
 
@@ -35,5 +35,5 @@
 
     'auto_install': False,
 
-    'images': ['static/description/icon.png'],
+    'images': ['static/description/banner.png'],
 }
