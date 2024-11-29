@@ -17,7 +17,7 @@ Credits
 Authors
 ~~~~~~~
 
-* Nexus <nexus.innovatech.yours@gmail.com>
+* NexOrionis Techsphere <nexorionis.info@gmail.com>
 
 Maintainers
 ~~~~~~~~~~~
