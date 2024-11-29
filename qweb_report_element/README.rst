@@ -32,9 +32,9 @@ Credits
 Authors
 ~~~~~~~
 
-* Nexus
+* NexOrionis Techsphere <nexorionis.info@gmail.com>
 
 Maintainers
 ~~~~~~~~~~~
 
-This module is maintained by the Nexus.
+This module is maintained by the NexOrionis Techsphere.
