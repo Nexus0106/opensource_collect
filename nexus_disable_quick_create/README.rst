@@ -22,4 +22,4 @@ Authors
 Maintainers
 ~~~~~~~~~~~
 
-This module is maintained by the Nexus.
+This module is maintained by the NecOrionis Techsphere.
