@@ -7,9 +7,9 @@
         This module automates the generation of payroll for all employees of a company.
         It schedules payroll runs for a given month and computes payslips for all employees.
     """,
-    'author': 'Kailli',
+    'author': 'NexOrionis Techsphere',
     'company': 'NexOrionis Techsphere',
-    'maintainer': 'NexOrionis Techsphere',
+    'maintainer': 'Kailli',
     'website': 'https://nexorionis.com',
     'depends': ['hr','hr_payroll'],
     'data': [
