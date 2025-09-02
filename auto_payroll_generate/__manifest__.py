@@ -8,9 +8,15 @@
         It schedules payroll runs for a given month and computes payslips for all employees.
     """,
     'author': 'NexOrionis Techsphere',
+    
     'company': 'NexOrionis Techsphere',
-    'maintainer': 'Kailli',
+    
+    'maintainer': 'Rowan Ember',
+    
     'website': 'https://nexorionis.com',
+    
+    'email': 'nexorionis.info@gmail.com',
+    
     'depends': ['hr','hr_payroll'],
     'data': [
             'data/scheduled_action.xml',
