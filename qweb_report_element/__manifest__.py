@@ -20,7 +20,7 @@
     
     'maintainer': 'Rowan Ember',
     
-    'website': 'https://nexorionis.com',
+    'website': 'https://nexorionis.odoo.com',
 
     'license': "LGPL-3",
 
