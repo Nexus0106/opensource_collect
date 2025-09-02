@@ -15,6 +15,12 @@
     'category': 'Reports',
 
     'author': 'NexOrionis Techsphere',
+    
+    'company': 'NexOrionis Techsphere',
+    
+    'maintainer': 'Rowan Ember',
+    
+    'website': 'https://nexorionis.odoo.com',
 
     'license': "LGPL-3",
 
