@@ -2,7 +2,7 @@
 {
     'name': 'Disable Easy Create',
 
-    'version': '17.1.1.0',
+    'version': '17.0.0.0',
 
     'summary': 'Disable Easy Create',
 
