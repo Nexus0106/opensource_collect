@@ -28,6 +28,8 @@
         'web'
     ],
 
+    'images': ['static/description/banner.jpg'],
+
     'data': [
         'security/hide_menu_access.xml',
     ],
