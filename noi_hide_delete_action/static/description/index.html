@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hide Delete Action</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .btn-danger {
+      background: #e74c3c;
+      color: white;
+    }
+    .btn-secondary {
+      background: #7f8c8d;
+      color: white;
+    }
+    .flow {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .arrow {
+      font-size: 24px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hide Delete Action</h1><br/>
+  <p>This page shows how the module behaves based on user access rights.</p><br/>
+
+  <div>
+    <h2>Check User Group</h2>
+    <div class="flow">
+      <div class="placeholder"><img src="image/user_access.png" style="width:80% !important;"></div>
+      <br/>
+
+      <div>
+        <strong>User with ➡️ "Hide Delete Action" Group</strong>
+      </div>
+
+      <div>
+        <span style="color: red;">Delete Button Hidden ❌</span>
+      </div>
+      <div class="placeholder"><img src="image/hide_delete.png" style="width:80% !important;"></div>
+      <br/>
+    </div>
+    <div class="flow" style="margin-top:15px;">
+      <div>
+        <strong>User without Group</strong>
+      </div>
+      <div>
+        <span style="color: green;">Delete Button Visible ✅</span>
+      </div>
+      <div class="placeholder"><img src="image/show_delete.png" style="width:80% !important;"></div>
+      <br/>
+    </div>
+  </div>
+
+  <br/>
+
+  <!-- YouTube Section -->
+    <div class="youtube-section">
+        <p>🎥 Check out the full flow on YouTube:</p>
+        <a class="youtube-btn" href="https://youtu.be/sO8uKDHsYbE" target="_blank">▶ Watch on YouTube</a>
+    </div>
+        <br/>
+
+  <br/>
+  <footer>
+        <p><strong>Sura - Odoo Developer(NexOrionis Techsphere)</strong></p>
+      <p>📧 Support: <a href="mailto:nexorionis.info@gmail.com">nexorionis.info@gmail.com</a></p>
+      <p>🌐 Website: <a href="https://nexorionis.odoo.com" target="_blank">nexorionis.odoo.com</a></p>
+  </footer>
+
+</body>
+</html>
