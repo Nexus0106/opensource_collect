@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_view_form_inherit_nrc" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.nrc</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <label for="nrc_prefix_id" string="NRC"/>
+                <div class="o_row">
+                    <field name="nrc_prefix_id" placeholder="Prefix" options="{'no_create': True, 'no_open': True}"/>
+                    <span>/</span>
+                    <field name="nrc_township_code_id" placeholder="Township" options="{'no_create': True, 'no_open': True}"/>
+                    <span>(</span>
+                    <field name="nrc_type_id" placeholder="Type" options="{'no_create': True, 'no_open': True}"/>
+                    <span>)</span>
+                    <field name="nrc_number" placeholder="Number"/>
+                </div>
+                <field name="nrc_full" readonly="True"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sale_order_view_tree_inherit_nrc" model="ir.ui.view">
+        <field name="name">sale.order.tree.inherit.nrc</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="nrc_full" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

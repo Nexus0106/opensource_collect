@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Myanmar NRC Format</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #875A7B;
+            border-bottom: 2px solid #875A7B;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 30px;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #875A7B;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #875A7B;
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Myanmar NRC Format</h1>
+        
+        <p>
+            <span class="badge">Odoo 18.0</span>
+            <span class="badge">Sales</span>
+            <span class="badge">Myanmar</span>
+        </p>
+        
+        <div class="highlight">
+            <strong>Myanmar National Registration Card (NRC)</strong> format integration for Odoo Sale Orders.
+            Capture customer NRC information in the standard Myanmar format: <code>12/BaHaNa(N)123456</code>
+        </div>
+        
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Pre-configured 14 State/Division NRC Prefixes</li>
+            <li>Township codes linked to respective States/Divisions</li>
+            <li>NRC Types (Citizen, Associate, Naturalized, etc.)</li>
+            <li>Integrated NRC fields on Sale Order form</li>
+            <li>Auto-computed full NRC number</li>
+            <li>Dynamic township filtering based on selected prefix</li>
+            <li>Searchable by full NRC number</li>
+        </ul>
+        
+        <h2>NRC Format</h2>
+        <p>The Myanmar NRC follows the format:</p>
+        <div class="highlight">
+            <code>[State/Division]/[Township Code]([Type])[6-digit Number]</code><br/><br/>
+            Example: <code>12/BAHANA(N)123456</code>
+            <ul>
+                <li><strong>12</strong> - Yangon Region</li>
+                <li><strong>BaHaNa</strong> - Botahtaung Township</li>
+                <li><strong>N</strong> - Citizen</li>
+                <li><strong>123456</strong> - Registration Number</li>
+            </ul>
+        </div>
+        
+        <h2>Configuration</h2>
+        <p>Access NRC configuration from: <strong>Sales → NRC Configuration</strong></p>
+        <ul class="feature-list">
+            <li>NRC Prefixes - Manage State/Division codes</li>
+            <li>NRC Township Codes - Manage township codes per State/Division</li>
+            <li>NRC Types - Manage citizenship types</li>
+        </ul>
+        
+        <h2>Usage</h2>
+        <p>On any Sale Order form, you will find NRC fields below the customer selection.
+        Select the prefix, township, type, and enter the 6-digit number to compose the full NRC.</p>
+        
+        <h2>Technical Information</h2>
+        <ul class="feature-list">
+            <li>Models: <code>nrc.prefix</code>, <code>nrc.township.code</code>, <code>nrc.type</code></li>
+            <li>Extended Model: <code>sale.order</code></li>
+            <li>Dependencies: <code>sale</code></li>
+        </ul>
+        
+        <h2>Support</h2>
+        <p>For support and customization requests, contact:</p>
+        <p><strong>Noetic Information Technologies</strong><br/>
+        Website: <a href="https://www.noetic.com.mm">www.noetic.com.mm</a></p>
+    </div>
+</body>
+</html>
