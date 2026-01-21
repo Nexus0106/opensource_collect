@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="nrc_menu_root"
+              name="NRC Format"
+              parent="contacts.res_partner_menu_config"
+              sequence="99"/>
+
+    <menuitem id="nrc_prefix_menu"
+              name="NRC Prefix"
+              parent="nrc_menu_root"
+              action="nrc_prefix_action"
+              sequence="10"/>
+
+    <menuitem id="nrc_township_code_menu"
+              name="NRC Township Code"
+              parent="nrc_menu_root"
+              action="nrc_township_code_action"
+              sequence="20"/>
+
+    <menuitem id="nrc_type_menu"
+              name="NRC Type"
+              parent="nrc_menu_root"
+              action="nrc_type_action"
+              sequence="30"/>
+</odoo>

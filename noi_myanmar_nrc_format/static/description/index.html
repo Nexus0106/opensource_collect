@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myanmar NRC Format</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #875A7B;
+            border-bottom: 2px solid #875A7B;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .feature {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #875A7B;
+        }
+        .feature h3 {
+            margin: 0 0 10px 0;
+            color: #875A7B;
+        }
+        .feature p {
+            margin: 0;
+            color: #666;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .nrc-example {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Myanmar NRC Format</h1>
+        <p>This module adds Myanmar National Registration Card (NRC) format support to Odoo Sales.</p>
+        
+        <h2>NRC Format</h2>
+        <div class="nrc-example">
+            <strong>12/BAHANA(N)123456</strong>
+        </div>
+        <p style="text-align: center; color: #666; margin-top: 10px;">
+            State Code / Township Code (Type) Number
+        </p>
+
+        <h2>Features</h2>
+        
+        <div class="feature">
+            <h3>NRC Prefix (State/Division Codes)</h3>
+            <p>All 14 states and regions of Myanmar with their official codes (1-14).</p>
+        </div>
+        
+        <div class="feature">
+            <h3>NRC Township Codes</h3>
+            <p>Township codes for each state/region following official Myanmar NRC format.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>NRC Types</h3>
+            <p>Support for all NRC citizenship types: N (Citizen), E (Associate), P (Naturalized), etc.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>Sale Order Integration</h3>
+            <p>Capture customer NRC information directly on sale orders with automatic full NRC computation.</p>
+        </div>
+
+        <h2>Configuration</h2>
+        <ul>
+            <li>Go to Sales → Configuration → NRC Configuration</li>
+            <li>Manage NRC Prefixes, Township Codes, and Types</li>
+            <li>Pre-loaded with all 14 states and common township codes</li>
+        </ul>
+
+        <h2>Usage</h2>
+        <ul>
+            <li>Open any Sale Order</li>
+            <li>Fill in the NRC Information section</li>
+            <li>Select Prefix, Township, Type and enter the 6-digit number</li>
+            <li>Full NRC is automatically computed and stored</li>
+        </ul>
+    </div>
+</body>
+</html>
