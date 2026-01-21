@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myanmar NRC Format</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #875A7B;
+            border-bottom: 2px solid #875A7B;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #00A09D;
+            margin-top: 30px;
+        }
+        .feature-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .feature-list li {
+            margin: 10px 0;
+        }
+        .highlight {
+            background: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #00A09D;
+            margin: 15px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .nrc-example {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #875A7B;
+        }
+    </style>
+</head>
+<body>
+    <h1>Myanmar NRC Format</h1>
+    
+    <p>This module adds Myanmar National Registration Card (NRC) format support to Sale Orders with proper validation and formatting.</p>
+
+    <h2>Features</h2>
+    <div class="feature-list">
+        <ul>
+            <li><strong>NRC Prefix Management</strong> - Configure State/Division codes (1-14)</li>
+            <li><strong>Township Codes</strong> - Manage township codes per State/Division</li>
+            <li><strong>NRC Types</strong> - Support for all NRC types (Naing, Pyuu, Ae, etc.)</li>
+            <li><strong>Sale Order Integration</strong> - Full NRC field on Sale Orders</li>
+            <li><strong>Automatic Formatting</strong> - Computes full NRC in standard format</li>
+        </ul>
+    </div>
+
+    <h2>NRC Format</h2>
+    <div class="highlight">
+        <p>Myanmar NRC follows the format:</p>
+        <p class="nrc-example">[State/Division]/[Township]([Type])[Number]</p>
+        <p>Example: <code>12/TAMANA(N)123456</code></p>
+    </div>
+
+    <h2>Configuration</h2>
+    <p>Navigate to <strong>Sales > Configuration > NRC Configuration</strong> to manage:</p>
+    <ul>
+        <li>NRC Prefixes (State/Division codes)</li>
+        <li>NRC Township Codes</li>
+        <li>NRC Types</li>
+    </ul>
+
+    <h2>Usage</h2>
+    <p>On any Sale Order form, you can enter the customer's NRC information in the dedicated NRC fields. The full NRC will be automatically computed and displayed.</p>
+
+    <h2>Pre-loaded Data</h2>
+    <p>This module comes with pre-loaded data including:</p>
+    <ul>
+        <li>All 14 State/Division prefixes</li>
+        <li>Sample township codes for Yangon and Mandalay</li>
+        <li>All standard NRC types</li>
+    </ul>
+
+    <h2>Technical Information</h2>
+    <ul>
+        <li><strong>Version:</strong> 19.0.1.0.0</li>
+        <li><strong>License:</strong> LGPL-3</li>
+        <li><strong>Dependencies:</strong> sale</li>
+    </ul>
+</body>
+</html>

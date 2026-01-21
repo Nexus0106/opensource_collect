@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Kachin State (1) -->
+        <record id="nrc_township_1_bamana" model="nrc.township.code">
+            <field name="code">BAMANA</field>
+            <field name="name">Bhamo</field>
+            <field name="prefix_id" ref="nrc_prefix_1"/>
+        </record>
+        <record id="nrc_township_1_makana" model="nrc.township.code">
+            <field name="code">MAKANA</field>
+            <field name="name">Myitkyina</field>
+            <field name="prefix_id" ref="nrc_prefix_1"/>
+        </record>
+        <record id="nrc_township_1_phakana" model="nrc.township.code">
+            <field name="code">PHAKANA</field>
+            <field name="name">Putao</field>
+            <field name="prefix_id" ref="nrc_prefix_1"/>
+        </record>
+        <record id="nrc_township_1_manana" model="nrc.township.code">
+            <field name="code">MANANA</field>
+            <field name="name">Mohnyin</field>
+            <field name="prefix_id" ref="nrc_prefix_1"/>
+        </record>
+
+        <!-- Kayah State (2) -->
+        <record id="nrc_township_2_lakana" model="nrc.township.code">
+            <field name="code">LAKANA</field>
+            <field name="name">Loikaw</field>
+            <field name="prefix_id" ref="nrc_prefix_2"/>
+        </record>
+        <record id="nrc_township_2_bhalakha" model="nrc.township.code">
+            <field name="code">BHALAKHA</field>
+            <field name="name">Bawlakhe</field>
+            <field name="prefix_id" ref="nrc_prefix_2"/>
+        </record>
+
+        <!-- Kayin State (3) -->
+        <record id="nrc_township_3_bakana" model="nrc.township.code">
+            <field name="code">BAKANA</field>
+            <field name="name">Hpa-an</field>
+            <field name="prefix_id" ref="nrc_prefix_3"/>
+        </record>
+        <record id="nrc_township_3_kakakha" model="nrc.township.code">
+            <field name="code">KAKAKHA</field>
+            <field name="name">Kawkareik</field>
+            <field name="prefix_id" ref="nrc_prefix_3"/>
+        </record>
+        <record id="nrc_township_3_mayawaddy" model="nrc.township.code">
+            <field name="code">MAYAWADDY</field>
+            <field name="name">Myawaddy</field>
+            <field name="prefix_id" ref="nrc_prefix_3"/>
+        </record>
+
+        <!-- Chin State (4) -->
+        <record id="nrc_township_4_hakha" model="nrc.township.code">
+            <field name="code">HAKHA</field>
+            <field name="name">Hakha</field>
+            <field name="prefix_id" ref="nrc_prefix_4"/>
+        </record>
+        <record id="nrc_township_4_phalam" model="nrc.township.code">
+            <field name="code">PHALAM</field>
+            <field name="name">Falam</field>
+            <field name="prefix_id" ref="nrc_prefix_4"/>
+        </record>
+        <record id="nrc_township_4_tatala" model="nrc.township.code">
+            <field name="code">TATALA</field>
+            <field name="name">Tedim</field>
+            <field name="prefix_id" ref="nrc_prefix_4"/>
+        </record>
+        <record id="nrc_township_4_mataphi" model="nrc.township.code">
+            <field name="code">MATAPHI</field>
+            <field name="name">Matupi</field>
+            <field name="prefix_id" ref="nrc_prefix_4"/>
+        </record>
+        <record id="nrc_township_4_mindat" model="nrc.township.code">
+            <field name="code">MINDAT</field>
+            <field name="name">Mindat</field>
+            <field name="prefix_id" ref="nrc_prefix_4"/>
+        </record>
+
+        <!-- Sagaing Region (5) -->
+        <record id="nrc_township_5_sakana" model="nrc.township.code">
+            <field name="code">SAKANA</field>
+            <field name="name">Sagaing</field>
+            <field name="prefix_id" ref="nrc_prefix_5"/>
+        </record>
+        <record id="nrc_township_5_manasi" model="nrc.township.code">
+            <field name="code">MANASI</field>
+            <field name="name">Monywa</field>
+            <field name="prefix_id" ref="nrc_prefix_5"/>
+        </record>
+        <record id="nrc_township_5_khatana" model="nrc.township.code">
+            <field name="code">KHATANA</field>
+            <field name="name">Katha</field>
+            <field name="prefix_id" ref="nrc_prefix_5"/>
+        </record>
+        <record id="nrc_township_5_kalawa" model="nrc.township.code">
+            <field name="code">KALAWA</field>
+            <field name="name">Kalay</field>
+            <field name="prefix_id" ref="nrc_prefix_5"/>
+        </record>
+        <record id="nrc_township_5_thamakha" model="nrc.township.code">
+            <field name="code">THAMAKHA</field>
+            <field name="name">Shwebo</field>
+            <field name="prefix_id" ref="nrc_prefix_5"/>
+        </record>
+
+        <!-- Tanintharyi Region (6) -->
+        <record id="nrc_township_6_tatana" model="nrc.township.code">
+            <field name="code">TATANA</field>
+            <field name="name">Dawei</field>
+            <field name="prefix_id" ref="nrc_prefix_6"/>
+        </record>
+        <record id="nrc_township_6_makana" model="nrc.township.code">
+            <field name="code">MAKANA</field>
+            <field name="name">Myeik</field>
+            <field name="prefix_id" ref="nrc_prefix_6"/>
+        </record>
+        <record id="nrc_township_6_kakana" model="nrc.township.code">
+            <field name="code">KAKANA</field>
+            <field name="name">Kawthoung</field>
+            <field name="prefix_id" ref="nrc_prefix_6"/>
+        </record>
+
+        <!-- Bago Region (7) -->
+        <record id="nrc_township_7_pakana" model="nrc.township.code">
+            <field name="code">PAKANA</field>
+            <field name="name">Bago</field>
+            <field name="prefix_id" ref="nrc_prefix_7"/>
+        </record>
+        <record id="nrc_township_7_tawana" model="nrc.township.code">
+            <field name="code">TAWANA</field>
+            <field name="name">Toungoo</field>
+            <field name="prefix_id" ref="nrc_prefix_7"/>
+        </record>
+        <record id="nrc_township_7_pamana" model="nrc.township.code">
+            <field name="code">PAMANA</field>
+            <field name="name">Pyay</field>
+            <field name="prefix_id" ref="nrc_prefix_7"/>
+        </record>
+        <record id="nrc_township_7_thawana" model="nrc.township.code">
+            <field name="code">THAWANA</field>
+            <field name="name">Thayawady</field>
+            <field name="prefix_id" ref="nrc_prefix_7"/>
+        </record>
+
+        <!-- Magway Region (8) -->
+        <record id="nrc_township_8_makana" model="nrc.township.code">
+            <field name="code">MAKANA</field>
+            <field name="name">Magway</field>
+            <field name="prefix_id" ref="nrc_prefix_8"/>
+        </record>
+        <record id="nrc_township_8_manana" model="nrc.township.code">
+            <field name="code">MANANA</field>
+            <field name="name">Minbu</field>
+            <field name="prefix_id" ref="nrc_prefix_8"/>
+        </record>
+        <record id="nrc_township_8_thakana" model="nrc.township.code">
+            <field name="code">THAKANA</field>
+            <field name="name">Thayet</field>
+            <field name="prefix_id" ref="nrc_prefix_8"/>
+        </record>
+        <record id="nrc_township_8_pakakha" model="nrc.township.code">
+            <field name="code">PAKAKHA</field>
+            <field name="name">Pakokku</field>
+            <field name="prefix_id" ref="nrc_prefix_8"/>
+        </record>
+        <record id="nrc_township_8_gaphaka" model="nrc.township.code">
+            <field name="code">GAPHAKA</field>
+            <field name="name">Gangaw</field>
+            <field name="prefix_id" ref="nrc_prefix_8"/>
+        </record>
+
+        <!-- Mandalay Region (9) -->
+        <record id="nrc_township_9_makana" model="nrc.township.code">
+            <field name="code">MAKANA</field>
+            <field name="name">Mandalay</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+        <record id="nrc_township_9_kakama" model="nrc.township.code">
+            <field name="code">KAKAMA</field>
+            <field name="name">Kyaukse</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+        <record id="nrc_township_9_mathana" model="nrc.township.code">
+            <field name="code">MATHANA</field>
+            <field name="name">Meiktila</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+        <record id="nrc_township_9_mamana" model="nrc.township.code">
+            <field name="code">MAMANA</field>
+            <field name="name">Myingyan</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+        <record id="nrc_township_9_nyauna" model="nrc.township.code">
+            <field name="code">NYAUNA</field>
+            <field name="name">Nyaung-U</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+        <record id="nrc_township_9_yamakha" model="nrc.township.code">
+            <field name="code">YAMAKHA</field>
+            <field name="name">Yamethin</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+        <record id="nrc_township_9_pabatha" model="nrc.township.code">
+            <field name="code">PABATHA</field>
+            <field name="name">Pyinoolwin</field>
+            <field name="prefix_id" ref="nrc_prefix_9"/>
+        </record>
+
+        <!-- Mon State (10) -->
+        <record id="nrc_township_10_malama" model="nrc.township.code">
+            <field name="code">MALAMA</field>
+            <field name="name">Mawlamyine</field>
+            <field name="prefix_id" ref="nrc_prefix_10"/>
+        </record>
+        <record id="nrc_township_10_thawana" model="nrc.township.code">
+            <field name="code">THAWANA</field>
+            <field name="name">Thaton</field>
+            <field name="prefix_id" ref="nrc_prefix_10"/>
+        </record>
+
+        <!-- Rakhine State (11) -->
+        <record id="nrc_township_11_sakana" model="nrc.township.code">
+            <field name="code">SAKANA</field>
+            <field name="name">Sittwe</field>
+            <field name="prefix_id" ref="nrc_prefix_11"/>
+        </record>
+        <record id="nrc_township_11_makana" model="nrc.township.code">
+            <field name="code">MAKANA</field>
+            <field name="name">Maungdaw</field>
+            <field name="prefix_id" ref="nrc_prefix_11"/>
+        </record>
+        <record id="nrc_township_11_kyaphu" model="nrc.township.code">
+            <field name="code">KYAPHU</field>
+            <field name="name">Kyaukpyu</field>
+            <field name="prefix_id" ref="nrc_prefix_11"/>
+        </record>
+        <record id="nrc_township_11_thataka" model="nrc.township.code">
+            <field name="code">THATAKA</field>
+            <field name="name">Thandwe</field>
+            <field name="prefix_id" ref="nrc_prefix_11"/>
+        </record>
+
+        <!-- Yangon Region (12) -->
+        <record id="nrc_township_12_alakapa" model="nrc.township.code">
+            <field name="code">ALAKAPA</field>
+            <field name="name">Ahlone</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_bahana" model="nrc.township.code">
+            <field name="code">BAHANA</field>
+            <field name="name">Bahan</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_bakakha" model="nrc.township.code">
+            <field name="code">BAKAKHA</field>
+            <field name="name">Botahtaung</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_dagana" model="nrc.township.code">
+            <field name="code">DAGANA</field>
+            <field name="name">Dagon</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_dagama" model="nrc.township.code">
+            <field name="code">DAGAMA</field>
+            <field name="name">Dagon Myothit (South)</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_dagata" model="nrc.township.code">
+            <field name="code">DAGATA</field>
+            <field name="name">Dagon Myothit (North)</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_dalana" model="nrc.township.code">
+            <field name="code">DALANA</field>
+            <field name="name">Dala</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_kakaka" model="nrc.township.code">
+            <field name="code">KAKAKA</field>
+            <field name="name">Kamayut</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_lakana" model="nrc.township.code">
+            <field name="code">LAKANA</field>
+            <field name="name">Lanmadaw</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_lathaya" model="nrc.township.code">
+            <field name="code">LATHAYA</field>
+            <field name="name">Latha</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_mayaka" model="nrc.township.code">
+            <field name="code">MAYAKA</field>
+            <field name="name">Mayangone</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_oukama" model="nrc.township.code">
+            <field name="code">OUKAMA</field>
+            <field name="name">North Okkalapa</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_oukatha" model="nrc.township.code">
+            <field name="code">OUKATHA</field>
+            <field name="name">South Okkalapa</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_pazata" model="nrc.township.code">
+            <field name="code">PAZATA</field>
+            <field name="name">Pabedan</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_sakana" model="nrc.township.code">
+            <field name="code">SAKANA</field>
+            <field name="name">Sanchaung</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_takana" model="nrc.township.code">
+            <field name="code">TAKANA</field>
+            <field name="name">Tamwe</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_thagaka" model="nrc.township.code">
+            <field name="code">THAGAKA</field>
+            <field name="name">Thingangyun</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_thalana" model="nrc.township.code">
+            <field name="code">THALANA</field>
+            <field name="name">Thanlyin</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_yakana" model="nrc.township.code">
+            <field name="code">YAKANA</field>
+            <field name="name">Yankin</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_hlalana" model="nrc.township.code">
+            <field name="code">HLALANA</field>
+            <field name="name">Hlaing</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_hlathaya" model="nrc.township.code">
+            <field name="code">HLATHAYA</field>
+            <field name="name">Hlaingthaya</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_thakana" model="nrc.township.code">
+            <field name="code">THAKANA</field>
+            <field name="name">Shwepyitha</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_lamana" model="nrc.township.code">
+            <field name="code">LAMANA</field>
+            <field name="name">Kyauktada</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_magata" model="nrc.township.code">
+            <field name="code">MAGATA</field>
+            <field name="name">Mingaladon</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_magada" model="nrc.township.code">
+            <field name="code">MAGADA</field>
+            <field name="name">Mingala Taungnyunt</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_akhana" model="nrc.township.code">
+            <field name="code">AKHANA</field>
+            <field name="name">Insein</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+        <record id="nrc_township_12_sekana" model="nrc.township.code">
+            <field name="code">SEKANA</field>
+            <field name="name">Seikgyikanaungto</field>
+            <field name="prefix_id" ref="nrc_prefix_12"/>
+        </record>
+
+        <!-- Shan State (13) -->
+        <record id="nrc_township_13_takana" model="nrc.township.code">
+            <field name="code">TAKANA</field>
+            <field name="name">Taunggyi</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+        <record id="nrc_township_13_lakana" model="nrc.township.code">
+            <field name="code">LAKANA</field>
+            <field name="name">Lashio</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+        <record id="nrc_township_13_kakana" model="nrc.township.code">
+            <field name="code">KAKANA</field>
+            <field name="name">Kengtung</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+        <record id="nrc_township_13_mamana" model="nrc.township.code">
+            <field name="code">MAMANA</field>
+            <field name="name">Muse</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+        <record id="nrc_township_13_kalana" model="nrc.township.code">
+            <field name="code">KALANA</field>
+            <field name="name">Kalaw</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+        <record id="nrc_township_13_nyahlaha" model="nrc.township.code">
+            <field name="code">NYAHLAHA</field>
+            <field name="name">Nyaungshwe</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+        <record id="nrc_township_13_tatakhina" model="nrc.township.code">
+            <field name="code">TATAKHINA</field>
+            <field name="name">Tachileik</field>
+            <field name="prefix_id" ref="nrc_prefix_13"/>
+        </record>
+
+        <!-- Ayeyarwady Region (14) -->
+        <record id="nrc_township_14_pakatha" model="nrc.township.code">
+            <field name="code">PAKATHA</field>
+            <field name="name">Pathein</field>
+            <field name="prefix_id" ref="nrc_prefix_14"/>
+        </record>
+        <record id="nrc_township_14_hathata" model="nrc.township.code">
+            <field name="code">HATHATA</field>
+            <field name="name">Hinthada</field>
+            <field name="prefix_id" ref="nrc_prefix_14"/>
+        </record>
+        <record id="nrc_township_14_makana" model="nrc.township.code">
+            <field name="code">MAKANA</field>
+            <field name="name">Myaungmya</field>
+            <field name="prefix_id" ref="nrc_prefix_14"/>
+        </record>
+        <record id="nrc_township_14_mamana" model="nrc.township.code">
+            <field name="code">MAMANA</field>
+            <field name="name">Maubin</field>
+            <field name="prefix_id" ref="nrc_prefix_14"/>
+        </record>
+        <record id="nrc_township_14_lapatha" model="nrc.township.code">
+            <field name="code">LAPATHA</field>
+            <field name="name">Labutta</field>
+            <field name="prefix_id" ref="nrc_prefix_14"/>
+        </record>
+        <record id="nrc_township_14_phapana" model="nrc.township.code">
+            <field name="code">PHAPANA</field>
+            <field name="name">Pyapon</field>
+            <field name="prefix_id" ref="nrc_prefix_14"/>
+        </record>
+
+    </data>
+</odoo>
