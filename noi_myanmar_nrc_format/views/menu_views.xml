@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="menu_nrc_format_root"
+        name="NRC Format"
+        parent="contacts.res_partner_menu_config"
+        sequence="50"/>
+
+    <menuitem
+        id="menu_nrc_prefix"
+        name="State/Region Prefixes"
+        parent="menu_nrc_format_root"
+        action="nrc_prefix_action"
+        sequence="10"/>
+
+    <menuitem
+        id="menu_nrc_township_code"
+        name="Township Codes"
+        parent="menu_nrc_format_root"
+        action="nrc_township_code_action"
+        sequence="20"/>
+
+    <menuitem
+        id="menu_nrc_type"
+        name="Citizenship Types"
+        parent="menu_nrc_format_root"
+        action="nrc_type_action"
+        sequence="30"/>
+
+</odoo>

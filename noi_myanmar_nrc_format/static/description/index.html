@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myanmar NRC Format</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background: linear-gradient(135deg, #875A7B, #6B4A63);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #875A7B;
+            border-bottom: 2px solid #875A7B;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .nrc-format {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .nrc-format code {
+            font-size: 1.3em;
+            color: #875A7B;
+            background: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .nrc-example {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nrc-example .nrc-value {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        .nrc-breakdown {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .nrc-part {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .nrc-part strong {
+            display: block;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #875A7B;
+            color: white;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .screenshot-placeholder {
+            background: #e9ecef;
+            border: 2px dashed #adb5bd;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 8px;
+            color: #6c757d;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px;
+        }
+        .badge-primary {
+            background: #875A7B;
+            color: white;
+        }
+        .badge-success {
+            background: #28a745;
+            color: white;
+        }
+        .badge-info {
+            background: #17a2b8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Myanmar NRC Format</h1>
+        <p>National Registration Card (NRC) Format Support for Odoo 15.0</p>
+        <div style="margin-top: 15px;">
+            <span class="badge badge-primary">Version 15.0.1.0.0</span>
+            <span class="badge badge-success">LGPL-3</span>
+            <span class="badge badge-info">Localization</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Overview</h2>
+        <p>
+            This module provides comprehensive Myanmar National Registration Card (NRC) format support for Odoo.
+            It allows businesses operating in Myanmar to properly record and manage customer NRC information
+            in their sales transactions.
+        </p>
+        <p>
+            The Myanmar NRC is a unique identification document issued to citizens and residents of Myanmar.
+            This module implements the standard NRC format used throughout the country.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>NRC Format Explanation</h2>
+        <div class="nrc-format">
+            <p><strong>Format Pattern:</strong> <code>PREFIX/TOWNSHIP(TYPE)NUMBER</code></p>
+        </div>
+        
+        <div class="nrc-example">
+            <div class="nrc-value">7/PAMANA(N)123456</div>
+            <div class="nrc-breakdown">
+                <div class="nrc-part">
+                    <strong>State/Region</strong>
+                    7 (Bago)
+                </div>
+                <div class="nrc-part">
+                    <strong>Township</strong>
+                    PAMANA (Pyay)
+                </div>
+                <div class="nrc-part">
+                    <strong>Type</strong>
+                    N (Citizen)
+                </div>
+                <div class="nrc-part">
+                    <strong>Number</strong>
+                    123456
+                </div>
+            </div>
+        </div>
+
+        <h3>Components</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>State/Region Code</strong></td>
+                    <td>Number 1-14 representing Myanmar's states and regions</td>
+                    <td>12 (Yangon Region)</td>
+                </tr>
+                <tr>
+                    <td><strong>Township Code</strong></td>
+                    <td>Unique alphabetic code for each township</td>
+                    <td>BAHANA (Bahan Township)</td>
+                </tr>
+                <tr>
+                    <td><strong>Citizenship Type</strong></td>
+                    <td>Single letter indicating citizenship status</td>
+                    <td>N (Citizen)</td>
+                </tr>
+                <tr>
+                    <td><strong>Registration Number</strong></td>
+                    <td>6-digit unique identification number</td>
+                    <td>123456</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Citizenship Types</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>English Name</th>
+                    <th>Myanmar Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>N</strong></td>
+                    <td>Citizen</td>
+                    <td>နိုင်</td>
+                </tr>
+                <tr>
+                    <td><strong>P</strong></td>
+                    <td>Associate Citizen</td>
+                    <td>ဧည့်</td>
+                </tr>
+                <tr>
+                    <td><strong>A</strong></td>
+                    <td>Naturalized Citizen</td>
+                    <td>ပြု</td>
+                </tr>
+                <tr>
+                    <td><strong>T</strong></td>
+                    <td>Temporary</td>
+                    <td>ယာယီ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Complete list of all 14 Myanmar states and regions</li>
+            <li>Township codes for all major townships in each state/region</li>
+            <li>Four citizenship types (N, P, A, T) with Myanmar names</li>
+            <li>NRC field integration with Sale Order</li>
+            <li>Automatic NRC format composition</li>
+            <li>Dynamic township filtering based on selected state/region</li>
+            <li>Editable tree views for easy data management</li>
+            <li>Menu structure under Settings > Technical > NRC Format</li>
+            <li>Proper access rights for users and administrators</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>States and Regions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>State/Region</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Kachin</td><td>State</td></tr>
+                <tr><td>2</td><td>Kayah</td><td>State</td></tr>
+                <tr><td>3</td><td>Kayin</td><td>State</td></tr>
+                <tr><td>4</td><td>Chin</td><td>State</td></tr>
+                <tr><td>5</td><td>Sagaing</td><td>Region</td></tr>
+                <tr><td>6</td><td>Tanintharyi</td><td>Region</td></tr>
+                <tr><td>7</td><td>Bago</td><td>Region</td></tr>
+                <tr><td>8</td><td>Magway</td><td>Region</td></tr>
+                <tr><td>9</td><td>Mandalay</td><td>Region</td></tr>
+                <tr><td>10</td><td>Mon</td><td>State</td></tr>
+                <tr><td>11</td><td>Rakhine</td><td>State</td></tr>
+                <tr><td>12</td><td>Yangon</td><td>Region</td></tr>
+                <tr><td>13</td><td>Shan</td><td>State</td></tr>
+                <tr><td>14</td><td>Ayeyarwady</td><td>Region</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Installation</h2>
+        <ol>
+            <li>Download the module and place it in your Odoo addons directory</li>
+            <li>Update the app list: <strong>Apps > Update Apps List</strong></li>
+            <li>Search for "Myanmar NRC Format" in the Apps menu</li>
+            <li>Click <strong>Install</strong></li>
+        </ol>
+        <div class="code-block">
+            <pre># Or install via command line
+./odoo-bin -c odoo.conf -u noi_myanmar_nrc_format</pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Usage Guide</h2>
+        <h3>Managing NRC Data</h3>
+        <p>Navigate to <strong>Settings > Technical > NRC Format</strong> to access:</p>
+        <ul>
+            <li><strong>State/Region Prefixes:</strong> View and manage the 14 states/regions</li>
+            <li><strong>Township Codes:</strong> View and manage township codes for each state/region</li>
+            <li><strong>Citizenship Types:</strong> View and manage the four citizenship types</li>
+        </ul>
+
+        <h3>Using NRC in Sale Orders</h3>
+        <ol>
+            <li>Open a Sale Order form</li>
+            <li>Find the "NRC Information" section below the customer field</li>
+            <li>Select the State/Region (1-14)</li>
+            <li>Select the Township (filtered based on the selected state/region)</li>
+            <li>Select the Citizenship Type (N, P, A, or T)</li>
+            <li>Enter the 6-digit NRC Number</li>
+            <li>The complete NRC will be automatically computed and displayed</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Screenshots</h2>
+        <div class="screenshot-placeholder">
+            <p><strong>Sale Order Form with NRC Fields</strong></p>
+            <p>Screenshot showing the NRC information section in the sale order form</p>
+        </div>
+        <br>
+        <div class="screenshot-placeholder">
+            <p><strong>NRC Configuration Menu</strong></p>
+            <p>Screenshot showing the NRC Format menu under Settings > Technical</p>
+        </div>
+        <br>
+        <div class="screenshot-placeholder">
+            <p><strong>Township Codes List</strong></p>
+            <p>Screenshot showing the editable tree view of township codes</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Information</h2>
+        <table>
+            <tr><td><strong>Module Name</strong></td><td>noi_myanmar_nrc_format</td></tr>
+            <tr><td><strong>Version</strong></td><td>15.0.1.0.0</td></tr>
+            <tr><td><strong>Category</strong></td><td>Localization</td></tr>
+            <tr><td><strong>License</strong></td><td>LGPL-3</td></tr>
+            <tr><td><strong>Dependencies</strong></td><td>base, sale</td></tr>
+            <tr><td><strong>Author</strong></td><td>NOI</td></tr>
+            <tr><td><strong>Website</strong></td><td><a href="https://github.com/noi-myanmar/nrc-format">https://github.com/noi-myanmar/nrc-format</a></td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Support</h2>
+        <p>For support, bug reports, or feature requests, please visit our GitHub repository:</p>
+        <p><a href="https://github.com/noi-myanmar/nrc-format">https://github.com/noi-myanmar/nrc-format</a></p>
+    </div>
+
+</body>
+</html>

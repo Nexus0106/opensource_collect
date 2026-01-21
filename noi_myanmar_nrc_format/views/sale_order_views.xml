@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_order_view_form_inherit_nrc" model="ir.ui.view">
+        <field name="name">sale.order.view.form.inherit.nrc</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="nrc" attrs="{'invisible': [('nrc', '=', False)]}"/>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <group string="NRC Information" col="4">
+                    <field name="nrc_prefix_id"/>
+                    <field name="nrc_township_code_id"/>
+                    <field name="nrc_type_id"/>
+                    <field name="nrc_number"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sale_order_view_tree_inherit_nrc" model="ir.ui.view">
+        <field name="name">sale.order.view.tree.inherit.nrc</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="nrc" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
