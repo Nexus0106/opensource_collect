@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nrc_prefix_user,nrc.prefix.user,model_nrc_prefix,base.group_user,1,0,0,0
+access_nrc_prefix_manager,nrc.prefix.manager,model_nrc_prefix,base.group_system,1,1,1,1
+access_nrc_township_code_user,nrc.township.code.user,model_nrc_township_code,base.group_user,1,0,0,0
+access_nrc_township_code_manager,nrc.township.code.manager,model_nrc_township_code,base.group_system,1,1,1,1
+access_nrc_type_user,nrc.type.user,model_nrc_type,base.group_user,1,0,0,0
+access_nrc_type_manager,nrc.type.manager,model_nrc_type,base.group_system,1,1,1,1

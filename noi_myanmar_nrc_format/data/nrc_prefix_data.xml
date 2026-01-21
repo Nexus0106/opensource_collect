@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="nrc_prefix_1" model="nrc.prefix">
+            <field name="code">1</field>
+            <field name="name">Kachin</field>
+        </record>
+        <record id="nrc_prefix_2" model="nrc.prefix">
+            <field name="code">2</field>
+            <field name="name">Kayah</field>
+        </record>
+        <record id="nrc_prefix_3" model="nrc.prefix">
+            <field name="code">3</field>
+            <field name="name">Kayin</field>
+        </record>
+        <record id="nrc_prefix_4" model="nrc.prefix">
+            <field name="code">4</field>
+            <field name="name">Chin</field>
+        </record>
+        <record id="nrc_prefix_5" model="nrc.prefix">
+            <field name="code">5</field>
+            <field name="name">Sagaing</field>
+        </record>
+        <record id="nrc_prefix_6" model="nrc.prefix">
+            <field name="code">6</field>
+            <field name="name">Tanintharyi</field>
+        </record>
+        <record id="nrc_prefix_7" model="nrc.prefix">
+            <field name="code">7</field>
+            <field name="name">Bago</field>
+        </record>
+        <record id="nrc_prefix_8" model="nrc.prefix">
+            <field name="code">8</field>
+            <field name="name">Magway</field>
+        </record>
+        <record id="nrc_prefix_9" model="nrc.prefix">
+            <field name="code">9</field>
+            <field name="name">Mandalay</field>
+        </record>
+        <record id="nrc_prefix_10" model="nrc.prefix">
+            <field name="code">10</field>
+            <field name="name">Mon</field>
+        </record>
+        <record id="nrc_prefix_11" model="nrc.prefix">
+            <field name="code">11</field>
+            <field name="name">Rakhine</field>
+        </record>
+        <record id="nrc_prefix_12" model="nrc.prefix">
+            <field name="code">12</field>
+            <field name="name">Yangon</field>
+        </record>
+        <record id="nrc_prefix_13" model="nrc.prefix">
+            <field name="code">13</field>
+            <field name="name">Shan</field>
+        </record>
+        <record id="nrc_prefix_14" model="nrc.prefix">
+            <field name="code">14</field>
+            <field name="name">Ayeyarwady</field>
+        </record>
+    </data>
+</odoo>

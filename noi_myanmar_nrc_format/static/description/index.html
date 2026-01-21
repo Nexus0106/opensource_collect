@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myanmar NRC Format</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #714B67;
+        }
+        h1 {
+            border-bottom: 2px solid #714B67;
+            padding-bottom: 10px;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+        .nrc-format {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #714B67;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #714B67;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Myanmar NRC Format</h1>
+    <p><span class="badge">Version 16.0.1.0.0</span></p>
+    
+    <h2>Overview</h2>
+    <p>This module provides complete management of Myanmar National Registration Card (NRC) format within Odoo. 
+       It allows you to capture and validate NRC numbers on Sale Orders following the official Myanmar NRC format.</p>
+    
+    <div class="nrc-format">
+        <strong>NRC Format:</strong> [Prefix]/[Township Code]([Type])[Number]<br>
+        <em>Example: 12/YAKANA(N)123456</em>
+    </div>
+    
+    <h2>Features</h2>
+    <ul class="feature-list">
+        <li>Complete NRC Prefix management (14 States/Regions)</li>
+        <li>Township Code management with region association</li>
+        <li>NRC Type management (Citizen, Associate, Naturalized, Temporary)</li>
+        <li>Integration with Sale Orders</li>
+        <li>Automatic NRC number formatting</li>
+        <li>Dynamic township filtering based on selected prefix</li>
+        <li>Pre-loaded data for all 14 regions and major townships</li>
+    </ul>
+    
+    <h2>NRC Components</h2>
+    
+    <h3>Prefix (State/Region Codes)</h3>
+    <table>
+        <tr><th>Code</th><th>State/Region</th></tr>
+        <tr><td>1</td><td>Kachin</td></tr>
+        <tr><td>2</td><td>Kayah</td></tr>
+        <tr><td>3</td><td>Kayin</td></tr>
+        <tr><td>4</td><td>Chin</td></tr>
+        <tr><td>5</td><td>Sagaing</td></tr>
+        <tr><td>6</td><td>Tanintharyi</td></tr>
+        <tr><td>7</td><td>Bago</td></tr>
+        <tr><td>8</td><td>Magway</td></tr>
+        <tr><td>9</td><td>Mandalay</td></tr>
+        <tr><td>10</td><td>Mon</td></tr>
+        <tr><td>11</td><td>Rakhine</td></tr>
+        <tr><td>12</td><td>Yangon</td></tr>
+        <tr><td>13</td><td>Shan</td></tr>
+        <tr><td>14</td><td>Ayeyarwady</td></tr>
+    </table>
+    
+    <h3>NRC Types</h3>
+    <table>
+        <tr><th>Code</th><th>Type</th><th>Description</th></tr>
+        <tr><td>N</td><td>Naing</td><td>Full Citizen</td></tr>
+        <tr><td>P</td><td>Pyit</td><td>Associate Citizen</td></tr>
+        <tr><td>A</td><td>Ae</td><td>Naturalized Citizen</td></tr>
+        <tr><td>T</td><td>Thay</td><td>Temporary/Foreigner Registration</td></tr>
+    </table>
+    
+    <h2>Usage</h2>
+    <ol>
+        <li>Install the module</li>
+        <li>Go to Sales → NRC Format to manage NRC prefixes, township codes, and types</li>
+        <li>Create or edit a Sale Order</li>
+        <li>Fill in the NRC fields (Prefix, Township Code, Type, Number)</li>
+        <li>The complete NRC will be automatically computed and displayed</li>
+    </ol>
+    
+    <h2>Technical Information</h2>
+    <ul>
+        <li><strong>Module Name:</strong> noi_myanmar_nrc_format</li>
+        <li><strong>Dependencies:</strong> sale</li>
+        <li><strong>License:</strong> LGPL-3</li>
+    </ul>
+    
+    <h2>Models</h2>
+    <ul>
+        <li><code>nrc.prefix</code> - State/Region codes (1-14)</li>
+        <li><code>nrc.township.code</code> - Township codes linked to prefixes</li>
+        <li><code>nrc.type</code> - Citizenship types (N, P, A, T)</li>
+    </ul>
+    
+    <h2>Support</h2>
+    <p>For support and customization requests, please contact NOI Vietnam.</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="nrc_prefix_view_tree" model="ir.ui.view">
+        <field name="name">nrc.prefix.view.tree</field>
+        <field name="model">nrc.prefix</field>
+        <field name="arch" type="xml">
+            <tree string="NRC Prefix" editable="bottom">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="active" column_invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="nrc_prefix_view_form" model="ir.ui.view">
+        <field name="name">nrc.prefix.view.form</field>
+        <field name="model">nrc.prefix</field>
+        <field name="arch" type="xml">
+            <form string="NRC Prefix">
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="nrc_prefix_action" model="ir.actions.act_window">
+        <field name="name">NRC Prefix</field>
+        <field name="res_model">nrc.prefix</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create NRC Prefix (State/Region Code)
+            </p>
+        </field>
+    </record>
+</odoo>
