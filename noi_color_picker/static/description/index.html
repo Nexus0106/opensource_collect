@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker Widget - Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #1976D2;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #2196F3;
+            overflow-x: auto;
+        }
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .example {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px dashed #ccc;
+        }
+        a {
+            color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Picker Widget</h1>
+    <p><strong>Module:</strong> Color Picker Widget</p>
+    <p><strong>Author:</strong> NexOrionis Techsphere</p>
+    <p><strong>Purpose:</strong> This module provides a simple color picker for <code>Char</code> fields. The selected color is saved as a HEX string (e.g., <code>#FF5733</code>).</p>
+
+    <h2>Installation</h2>
+    <ol>
+        <li>Place the module folder <code>noi_color_picker</code> in your Odoo addons directory.</li>
+        <li>Update apps list in Odoo.</li>
+        <li>Install the module <strong>Color Picker Widget</strong> from Apps.</li>
+    </ol>
+
+    <h2>Usage</h2>
+    <p>To use the color picker in a model:</p>
+    <pre><code>color_code = fields.Char(string="Color Code")</code></pre>
+    <p>In the XML form view, add the widget:</p>
+    <pre><code>&lt;field name="color_code" widget="noi_color_picker"/&gt;</code></pre>
+
+    <div class="example">
+        <strong>Example:</strong>
+        <pre><code>&lt;form string="Company"&gt;
+    &lt;sheet&gt;
+        &lt;group&gt;
+            &lt;field name="color_code" widget="noi_color_picker"/&gt;
+        &lt;/group&gt;
+    &lt;/sheet&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Simple color input for <code>Char</code> fields.</li>
+        <li>Displays a live preview of the selected color.</li>
+        <li>Supports HEX codes directly.</li>
+        <li>Readonly mode supported automatically.</li>
+        <li>Fully compatible with Odoo 17 backend assets system.</li>
+    </ul>
+
+    <h2>Notes</h2>
+    <ul>
+        <li>The value is stored in the database as a string.</li>
+        <li>Works in desktop and mobile views.</li>
+        <li>Can be combined with other form logic, like changing color automatically based on state.</li>
+    </ul>
+
+    <h2>File Structure</h2>
+    <pre><code>noi_color_picker/
+├─ __manifest__.py
+├─ static/
+│  ├─ src/
+│  │  ├─ js/
+│  │  │  ├─ color_picker_field.js
+│  │  │  └─ color_picker_field.xml
+│  └─ description/
+│     └─ index.html
+└─ views/ (if needed)</code></pre>
+
+    <h2>Support</h2>
+    <p>For issues or questions, contact <a href="mailto:nexorionis.info@gmail.com">nexorionis.info@gmail.com</a>.</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="noi_color_picker.ColorPickerField">
+        <div class="o_field_color_picker d-flex align-items-center gap-2">
+            <input
+                type="color"
+                t-ref="colorInput"
+                class="form-control form-control-color border"
+                t-att-value="colorValue"
+                t-att-disabled="isReadonly"
+                t-on-change="onColorChange"
+                style="width: 40px; height: 32px; padding: 2px; cursor: pointer;"
+            />
+            <span class="text-muted" t-esc="colorValue" style="font-size: 12px;"/>
+        </div>
+    </t>
+</templates>
