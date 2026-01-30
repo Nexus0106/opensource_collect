@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_target_discount_config_manager,target.discount.config.manager,model_target_discount_config,sales_team.group_sale_manager,1,1,1,1
+access_target_discount_config_user,target.discount.config.user,model_target_discount_config,sales_team.group_sale_salesman,1,0,0,0
+access_target_discount_slab_manager,target.discount.slab.manager,model_target_discount_slab,sales_team.group_sale_manager,1,1,1,1
+access_target_discount_slab_user,target.discount.slab.user,model_target_discount_slab,sales_team.group_sale_salesman,1,0,0,0

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Target Discount Configuration Form View -->
+    <record id="view_target_discount_config_form" model="ir.ui.view">
+        <field name="name">target.discount.config.form</field>
+        <field name="model">target.discount.config</field>
+        <field name="arch" type="xml">
+            <form string="Target Discount Configuration">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <field name="active" widget="boolean_toggle"/>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Configuration Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="period_type"/>
+                            <field name="year"/>
+                            <field name="month" invisible="period_type != 'monthly'"/>
+                        </group>
+                        <group>
+                            <field name="discount_account_id" options="{'no_create': True}"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Discount Slabs" name="slabs">
+                            <field name="slab_ids">
+                                <list editable="bottom">
+                                    <field name="min_amount"/>
+                                    <field name="discount_percentage"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Target Discount Configuration Tree View -->
+    <record id="view_target_discount_config_tree" model="ir.ui.view">
+        <field name="name">target.discount.config.tree</field>
+        <field name="model">target.discount.config</field>
+        <field name="arch" type="xml">
+            <list string="Target Discount Configurations">
+                <field name="name"/>
+                <field name="period_type"/>
+                <field name="year"/>
+                <field name="month"/>
+                <field name="active"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Target Discount Configuration Action -->
+    <record id="action_target_discount_config" model="ir.actions.act_window">
+        <field name="name">Target Discount Configuration</field>
+        <field name="res_model">target.discount.config</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Target Discount Configuration
+            </p>
+            <p>
+                Configure discount slabs based on customer historical invoice totals.
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="menu_target_discount_config"
+        name="Sale Discount Config"
+        parent="sale.menu_sale_config"
+        action="action_target_discount_config"
+        sequence="10"/>
+</odoo>
