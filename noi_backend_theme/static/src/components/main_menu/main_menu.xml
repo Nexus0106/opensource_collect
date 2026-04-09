@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="noi_backend_theme.MainMenu">
+        <div class="background" t-att-style="backgroundStyle"/>
+        <div class="main-menu">
+            <div class="widgets" t-if="showWidgets">
+                <WidgetHour
+                    userIsAdmin="userIsAdmin"
+                    announcement="announcement"/>
+                <WidgetAnnouncement
+                    userIsAdmin="userIsAdmin"
+                    announcement="announcement"/>
+            </div>
+            <div class="menu-search">
+                <i class="oi oi-magnifying-glass menu-search__icon"/>
+                <input
+                    class="menu-search__input"
+                    t-model="state.search"
+                    type="search"
+                    t-att-placeholder="searchPlaceholder"
+                    aria-label="Search menus"/>
+            </div>
+            <div t-att-class="state.search.trim() ? 'apps-container apps-container--search' : 'apps-container'">
+                <t t-foreach="visibleMenus" t-as="app" t-key="app.id">
+                    <a t-att-class="state.search.trim() ? 'menu-result' : ''" t-on-click="() => this.onClickModule(app)">
+                        <img t-if="app.webIcon &amp;&amp; app.webIcon.includes('.png')" class="module-icon" t-attf-src="data:image/png;base64,{{app.webIconData}}"/>
+                        <img t-if="app.webIcon &amp;&amp; app.webIcon.includes('.svg')" class="module-icon" t-attf-src="data:image/svg+xml;base64,{{app.webIconData}}"/>
+                        <img t-if="!app.webIcon" class="module-icon" src="/noi_backend_theme/static/src/img/default_icon.png"/>
+                        <p t-esc="state.search.trim() &amp;&amp; app.searchPath ? app.searchPath : app.name" class="main-menu__label fs-5 text-truncate"/>
+                     </a>
+                </t>
+                <div t-if="state.search.trim() &amp;&amp; !visibleMenus.length" class="menu-search__empty text-center w-100">
+                    <t t-esc="noMenusFound"/>
+                </div>
+             </div>
+        </div>
+    </t>
+</templates>

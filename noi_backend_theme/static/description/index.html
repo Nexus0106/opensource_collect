@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Backend Theme</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222222;
+            background: #f6f8fb;
+        }
+        .noi_wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+        .noi_section {
+            padding: 30px 24px;
+        }
+        .noi_hero {
+            background: #ffffff;
+            border: 1px solid #dde3ea;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .noi_hero_head {
+            background: #1f3c88;
+            padding: 14px 20px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .noi_hero_body {
+            padding: 30px 24px;
+        }
+        .noi_label {
+            display: inline-block;
+            background: #eaf2ff;
+            color: #1f3c88;
+            border: 1px solid #cdddf8;
+            border-radius: 30px;
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        .noi_title {
+            margin: 0 0 14px 0;
+            font-size: 38px;
+            line-height: 1.2;
+            color: #1b1f2a;
+        }
+        .noi_desc {
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #4d5a6a;
+        }
+        .noi_btns {
+            margin-top: 22px;
+        }
+        .noi_btn {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 11px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .noi_btn_primary {
+            background: #1f3c88;
+            color: #ffffff;
+        }
+        .noi_btn_secondary {
+            background: #f39b5d;
+            color: #ffffff;
+        }
+        .noi_banner {
+            margin-top: 24px;
+            text-align: center;
+        }
+        .noi_banner img,
+        .noi_img img {
+            width: 50%;
+            margin: auto;
+            display: block;
+            border: 1px solid #dfe5ec;
+            border-radius: 10px;
+            background: #ffffff;
+        }
+        .noi_block_title {
+            margin: 0 0 18px 0;
+            font-size: 28px;
+            color: #1b1f2a;
+            text-align: center;
+        }
+        .noi_subtitle {
+            margin: 0 auto 24px auto;
+            max-width: 800px;
+            text-align: center;
+            color: #5c6778;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .noi_features {
+            font-size: 0;
+            text-align: center;
+        }
+        .noi_feature_card {
+            display: inline-block;
+            vertical-align: top;
+            width: 48%;
+            margin: 1%;
+            background: #ffffff;
+            border: 1px solid #dde3ea;
+            border-radius: 12px;
+            padding: 22px 18px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .noi_feature_card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #1f3c88;
+        }
+        .noi_feature_card p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #556274;
+        }
+        .noi_info {
+            background: #f8fbff;
+            border: 1px solid #dde3ea;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .noi_info p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.9;
+            color: #4d5a6a;
+        }
+        .noi_gallery_item {
+            background: #ffffff;
+            border: 1px solid #dde3ea;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .noi_gallery_item h3 {
+            margin: 0 0 8px 0;
+            font-size: 20px;
+            color: #1f3c88;
+            text-align: center;
+        }
+        .noi_gallery_item p {
+            margin: 0 0 16px 0;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #5b6778;
+            text-align: center;
+        }
+        .noi_footer {
+            background: #1b1f2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 24px 20px;
+            border-radius: 12px;
+        }
+        .noi_footer a {
+            color: #8fd3ff;
+            text-decoration: none;
+        }
+        .noi_footer p {
+            margin: 6px 0;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        @media only screen and (max-width: 768px) {
+            .noi_title {
+                font-size: 28px;
+            }
+            .noi_feature_card {
+                width: 100%;
+                margin: 0 0 14px 0;
+            }
+            .noi_banner img,
+            .noi_img img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="noi_wrapper">
+        <div class="noi_section">
+            <div class="noi_hero">
+                <div class="noi_hero_head">NexOrionis Techsphere</div>
+                <div class="noi_hero_body">
+                    <span class="noi_label">Enterprise-Inspired Odoo Backend Theme</span>
+                    <h1 class="noi_title">Backend Theme</h1>
+                    <p class="noi_desc">
+                        Backend Theme is a clean and professional Odoo backend enhancement module designed to improve the daily user experience.
+                        It provides a smarter main menu layout, dark mode support, bookmark shortcuts, and a more organized navigation flow
+                        so users can work faster and more comfortably inside the system.
+                    </p>
+                    <div class="noi_btns">
+                        <a href="#screenshots" class="noi_btn noi_btn_primary">See Screenshots</a>
+                        <a href="https://nexorionis.odoo.com/" target="_blank" rel="noreferrer noopener" class="noi_btn noi_btn_secondary">Visit Website</a>
+                    </div>
+                    <div class="noi_banner">
+                        <img src="banner.png" alt="Backend Theme Banner" style="width:80%; margin:auto; display:block;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi_section">
+            <h2 class="noi_block_title">Main Features</h2>
+            <p class="noi_subtitle">
+                This module focuses on practical backend improvements for users who need a cleaner interface, faster access,
+                and a more modern workspace inside Odoo.
+            </p>
+            <div class="noi_features">
+                <div class="noi_feature_card">
+                    <h3>Main Menu Function</h3>
+                    <p>
+                        Provides a centralized backend landing area where users can access installed applications more quickly and with better organization.
+                    </p>
+                </div>
+                <div class="noi_feature_card">
+                    <h3>Dark Mode Support</h3>
+                    <p>
+                        Adds a comfortable dark mode view for users who work long hours and prefer a more modern visual experience.
+                    </p>
+                </div>
+                <div class="noi_feature_card">
+                    <h3>Bookmark Shortcuts</h3>
+                    <p>
+                        Allows users to save important menus or links for faster repeated access during daily operations.
+                    </p>
+                </div>
+                <div class="noi_feature_card">
+                    <h3>Clean Navigation</h3>
+                    <p>
+                        Improves the menu search and visual flow so backend navigation feels simpler, clearer, and more efficient.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi_section">
+            <h2 class="noi_block_title">Why Choose This Module</h2>
+            <div class="noi_info">
+                <p>
+                    Backend Theme is built for teams that want a more polished Odoo backend without changing the familiar business flow.
+                    The design keeps the interface easy to understand while giving it a stronger visual structure. This helps administrators,
+                    operators, and internal users move through modules more smoothly and stay productive throughout the day.
+                </p>
+            </div>
+        </div>
+
+        <div class="noi_section" id="screenshots">
+            <h2 class="noi_block_title">Screenshots</h2>
+            <p class="noi_subtitle">
+                Below are preview screenshots that show dark mode behavior, menu search usage, and interface improvements.
+            </p>
+
+            <div class="noi_gallery_item">
+                <h3>Dark Mode Icon Placement</h3>
+                <p>Quick access placement for changing the backend theme mode.</p>
+                <div class="noi_img">
+                    <img src="dark_mode_icon_place.png" alt="Dark mode icon placement screenshot" style="width:80%; margin:auto; display:block;" />
+                </div>
+            </div>
+
+            <div class="noi_gallery_item">
+                <h3>After Dark Mode Change</h3>
+                <p>Preview of the backend screen after switching to dark mode.</p>
+                <div class="noi_img">
+                    <img src="after_change_dark_mode.png" alt="After dark mode change screenshot" style="width:80%; margin:auto; display:block;" />
+                </div>
+            </div>
+
+            <div class="noi_gallery_item">
+                <h3>White Theme Search Bar</h3>
+                <p>Search area layout in the light theme version.</p>
+                <div class="noi_img">
+                    <img src="white_theme_search_bar.png" alt="White theme search bar screenshot" style="width:80%; margin:auto; display:block;" />
+                </div>
+            </div>
+
+            <div class="noi_gallery_item">
+                <h3>Search Menu Usage</h3>
+                <p>Example of how users can search and open menus more quickly.</p>
+                <div class="noi_img">
+                    <img src="white_theme_search_bar_useage.png" alt="Search menu usage screenshot" style="width:80%; margin:auto; display:block;" />
+                </div>
+            </div>
+
+            <div class="noi_gallery_item">
+                <h3>Dark Mode View</h3>
+                <p>Overall preview of the backend appearance in dark mode.</p>
+                <div class="noi_img">
+                    <img src="dark_mode_view.png" alt="Dark mode view screenshot" style="width:80%; margin:auto; display:block;" />
+                </div>
+            </div>
+        </div>
+
+        <div class="noi_section">
+            <div class="noi_footer">
+                <p><strong>NexOrionis Techsphere</strong></p>
+                <p>Smart Odoo customizations for modern backend teams</p>
+                <p>
+                    Website: <a href="https://nexorionis.odoo.com/" target="_blank" rel="noreferrer noopener">nexorionis.odoo.com</a>
+                    &nbsp;|&nbsp;
+                    YouTube: <a href="https://www.youtube.com/@nexorionistechsphere" target="_blank" rel="noreferrer noopener">@nexorionistechsphere</a>
+                    &nbsp;|&nbsp;
+                    Email: <a href="mailto:nexorionis.info@gmail.com">nexorionis.info@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
