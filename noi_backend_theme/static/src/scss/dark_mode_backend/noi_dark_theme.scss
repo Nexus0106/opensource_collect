@@ -1,0 +1,1328 @@
+$noi-dark-bg: #1b1d26;
+$noi-dark-surface: #262a36;
+$noi-dark-surface-alt: #3c3e4b;
+$noi-dark-border: rgba(255, 255, 255, 0.08);
+$noi-dark-border-strong: rgba(255, 255, 255, 0.14);
+$noi-dark-text: #d1d1d1;
+$noi-dark-text-strong: #e4e4e4;
+$noi-dark-text-muted: #b1b3bc;
+$noi-dark-primary: #6b3e66;
+$noi-dark-action: #02c7b5;
+
+html.o_main_menu_dark,
+body.o_main_menu_dark {
+    body,
+    .o_web_client,
+    .o_action_manager,
+    .o_action_manager > .o_action,
+    .o_action_manager .o_content,
+    .o_content,
+    .o_content > .o_renderer,
+    .o_view_controller {
+        background-color: $noi-dark-bg !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_main_navbar {
+        --o-navbar-badge-color: #fff;
+        --o-navbar-badge-text-shadow: none;
+        --NavBar-menuToggle-color: #fff;
+        --NavBar-entry-backgroundColor: transparent;
+        --NavBar-entry-color: #{$noi-dark-text};
+        --NavBar-entry-color--hover: #{$noi-dark-text-strong};
+        --NavBar-entry-color--active: #{$noi-dark-text-strong};
+        --NavBar-brand-color: #{$noi-dark-text};
+        --NavBar-entry-borderColor-active: #{darken($noi-dark-action, 10%)};
+        --NavBar-entry-backgroundColor--active: #{mix($noi-dark-action, $noi-dark-bg, 15%)};
+        --NavBar-entry-backgroundColor--hover: #{$noi-dark-surface-alt};
+        --NavBar-entry-backgroundColor--focus: #{$noi-dark-surface-alt};
+        background: $noi-dark-bg !important;
+        border-bottom-color: $noi-dark-border !important;
+    }
+
+    .o_main_navbar,
+    .o_menu_sections,
+    .o_menu_systray,
+    .o_web_client > header {
+        background-color: $noi-dark-bg !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_main_navbar .o_nav_entry,
+    .o_main_navbar .dropdown-toggle,
+    .o_main_navbar .o_menu_brand,
+    .o_main_navbar .oe_topbar_name,
+    .o_main_navbar .fa,
+    .o_main_navbar .oi {
+        color: $noi-dark-text !important;
+    }
+
+    .o_main_navbar .o_menu_sections .o_nav_entry,
+    .o_main_navbar .o_menu_sections .dropdown-toggle {
+        background: transparent !important;
+    }
+
+    .o_control_panel,
+    .o_form_view,
+    .o_kanban_view,
+    .o_list_view,
+    .o_graph_view,
+    .o_pivot_view,
+    .o_cohort_view,
+    .o_activity_view,
+    .o_calendar_view,
+    .o_search_panel {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_base_settings_view,
+    .o_base_settings_view .o_form_renderer,
+    .o_base_settings_view .o_setting_container,
+    .o_base_settings_view .o_setting_container .settings,
+    .o_base_settings_view .o_setting_container .settings_tab,
+    .o_base_settings_view .o_setting_box,
+    .o_base_settings_view .o_settings_container {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_base_settings_view .o_form_renderer {
+        --settings__tab-bg: #{$noi-dark-surface};
+        --settings__tab-bg--active: #{mix($noi-dark-action, $noi-dark-bg, 15%)};
+        --settings__tab-color: #{$noi-dark-text};
+        --settings__title-bg: #{$noi-dark-surface-alt};
+    }
+
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings > .app_settings_block h2,
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings > .app_settings_block .h2 {
+        background-color: var(--settings__title-bg) !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings_tab .tab,
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings_tab .tab span,
+    .o_base_settings_view .o_form_renderer .o_setting_box .o_setting_left_pane,
+    .o_base_settings_view .o_form_renderer .o_setting_box .o_setting_right_pane {
+        color: $noi-dark-text !important;
+    }
+
+    .o_base_settings_view .text-muted,
+    .o_base_settings_view .o-muted {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings_tab .selected,
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings_tab .selected span {
+        background-color: var(--settings__tab-bg--active) !important;
+        box-shadow: inset 3px 0 0 $noi-dark-action !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_base_settings_view .o_form_renderer .o_setting_box,
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings,
+    .o_base_settings_view .o_form_renderer .o_setting_container .settings_tab {
+        border-color: $noi-dark-border !important;
+        box-shadow: none !important;
+    }
+
+    .o_base_settings_view .o_form_renderer input,
+    .o_base_settings_view .o_form_renderer textarea,
+    .o_base_settings_view .o_form_renderer select,
+    .o_base_settings_view .o_form_renderer .o_input,
+    .o_base_settings_view .o_form_renderer .form-control,
+    .o_base_settings_view .o_form_renderer .form-select {
+        background-color: $noi-dark-bg !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_base_settings_view .o_form_renderer input::placeholder,
+    .o_base_settings_view .o_form_renderer textarea::placeholder,
+    .o_base_settings_view .o_form_renderer .o_input::placeholder,
+    .o_base_settings_view .o_form_renderer .form-control::placeholder {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_control_panel {
+        border-bottom-color: $noi-dark-border !important;
+        box-shadow: none !important;
+    }
+
+    .o_control_panel .o_breadcrumb,
+    .o_control_panel .breadcrumb {
+        background: transparent !important;
+    }
+
+    .o_control_panel .o_last_breadcrumb_item,
+    .o_control_panel .breadcrumb-item.active,
+    .o_control_panel .breadcrumb-item.active > .text-900,
+    .o_control_panel .o_control_panel_breadcrumbs .fa,
+    .o_control_panel .o_control_panel_breadcrumbs .oi {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_control_panel .o_control_panel_breadcrumbs .text-muted,
+    .o_control_panel .o_control_panel_breadcrumbs .o-muted,
+    .o_control_panel .breadcrumb-item > .text-muted {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_form_status_indicator .o_form_status_indicator_buttons {
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        gap: 0.25rem;
+    }
+
+    .o_form_status_indicator .o_form_button_save,
+    .o_form_status_indicator .o_form_button_cancel,
+    .o_form_status_indicator .o_form_status_indicator_buttons .btn.btn-light {
+        background: transparent !important;
+        color: $noi-dark-text-muted !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .o_form_status_indicator .o_form_button_save:hover,
+    .o_form_status_indicator .o_form_button_save:focus,
+    .o_form_status_indicator .o_form_button_cancel:hover,
+    .o_form_status_indicator .o_form_button_cancel:focus,
+    .o_form_status_indicator .o_form_status_indicator_buttons .btn.btn-light:hover,
+    .o_form_status_indicator .o_form_status_indicator_buttons .btn.btn-light:focus {
+        background: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_graph_view .o_graph_renderer,
+    .o_graph_view .o_graph_canvas_container,
+    .o_graph_view .o_graph_renderer canvas {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        background-image: none !important;
+    }
+
+    .o_graph_view .o_graph_custom_tooltip,
+    .o_graph_view .o_tooltip_legend {
+        background: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_graph_view .o_graph_custom_tooltip th,
+    .o_graph_view .o_graph_custom_tooltip td,
+    .o_graph_view .o_tooltip_legend {
+        color: $noi-dark-text !important;
+    }
+
+    .o_searchview {
+        --SearchBar-background-color: #{$noi-dark-bg};
+        background-color: $noi-dark-bg !important;
+        border-color: $noi-dark-border-strong !important;
+        color: $noi-dark-text !important;
+        box-shadow: none !important;
+    }
+
+    .o_searchview_facet {
+        --SearchBar-facet-background: #{$noi-dark-bg};
+        background-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_searchview_facet .o_facet_values,
+    .o_searchview_facet .o_facet_value,
+    .o_searchview_facet .o_facet_values_sep,
+    .o_searchview_facet .o_facet_remove {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_searchview_facet .o_searchview_facet_label.text-bg-action,
+    .o_searchview_facet .o_searchview_facet_label.text-bg-action .fa,
+    .o_searchview_facet .o_searchview_facet_label.text-bg-action small {
+        color: #fff !important;
+    }
+
+    .o_searchview .o_searchview_facet .o_searchview_facet_label,
+    .o_searchview .o_searchview_facet .position-absolute {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .o_searchview_input,
+    .o_searchview input.o_searchview_input,
+    .o_searchview input.o_searchview_input::placeholder,
+    .o_searchview_icon,
+    .o_searchview_dropdown_toggler {
+        color: $noi-dark-text !important;
+    }
+
+    .dropdown-menu,
+    .o_searchview_autocomplete {
+        background-color: $noi-dark-surface !important;
+        border-color: $noi-dark-border-strong !important;
+        color: $noi-dark-text !important;
+    }
+
+    .dropdown-item,
+    .dropdown-item a {
+        color: $noi-dark-text !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        background-color: mix($noi-dark-action, $noi-dark-bg, 15%) !important;
+        color: #fff !important;
+    }
+
+    .o_search_bar_menu,
+    .o_search_bar_menu .o_dropdown_title,
+    .o_search_bar_menu .dropdown-item,
+    .o_search_bar_menu .o_menu_item,
+    .o_search_bar_menu .o_accordion_toggle,
+    .o_search_bar_menu .form-check-label,
+    .o_search_bar_menu .dropdown-item span,
+    .o_search_bar_menu .dropdown-item label,
+    .o_search_bar_menu .dropdown-item small,
+    .o_search_bar_menu .o_add_custom_group_menu,
+    .o_search_bar_menu .o_add_custom_filter,
+    .o_search_bar_menu .o_add_favorite,
+    .o_search_bar_menu .dropdown-toggle {
+        color: $noi-dark-text !important;
+    }
+
+    .o_search_bar_menu .o_dropdown_title,
+    .o_search_bar_menu .dropdown-item:hover,
+    .o_search_bar_menu .dropdown-item:focus,
+    .o_search_bar_menu .o_menu_item.selected,
+    .o_search_bar_menu .o_accordion_toggle:hover,
+    .o_search_bar_menu .o_accordion_toggle:focus {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_dialog,
+    .modal,
+    .modal-content,
+    .modal-header,
+    .modal-body,
+    .modal-footer,
+    .o_technical_modal .modal-content,
+    .o_technical_modal .modal-header,
+    .o_technical_modal .modal-body,
+    .o_technical_modal .modal-footer {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+        box-shadow: none !important;
+    }
+
+    .modal-header,
+    .modal-footer,
+    .o_dialog .modal-header,
+    .o_dialog .modal-footer {
+        border-color: $noi-dark-border !important;
+    }
+
+    .modal-title,
+    .o_dialog .modal-title,
+    .o_dialog .btn-close,
+    .modal-header .btn-close {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_dialog .btn-close,
+    .modal-header .btn-close {
+        filter: invert(1) grayscale(1);
+        opacity: 0.75;
+    }
+
+    .o_dialog .o_list_renderer,
+    .modal .o_list_renderer {
+        --ListRenderer-thead-bg-color: #{$noi-dark-surface};
+        --ListRenderer-tfoot-bg-color: #{$noi-dark-surface-alt};
+        --table-bg: #{$noi-dark-surface};
+    }
+
+    .o_dialog .o_list_table,
+    .modal .o_list_table,
+    .o_dialog .o_list_table thead,
+    .modal .o_list_table thead,
+    .o_dialog .o_list_table thead th,
+    .modal .o_list_table thead th,
+    .o_dialog .o_list_table tfoot td,
+    .modal .o_list_table tfoot td {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+    }
+
+    .o_dialog .o_list_table thead th,
+    .modal .o_list_table thead th {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_dialog .o_list_table tbody > tr.o_group_header,
+    .modal .o_list_table tbody > tr.o_group_header,
+    .o_list_table tbody > tr.o_group_header {
+        background-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_dialog .o_list_table tbody > tr.o_group_header > th,
+    .o_dialog .o_list_table tbody > tr.o_group_header > td,
+    .modal .o_list_table tbody > tr.o_group_header > th,
+    .modal .o_list_table tbody > tr.o_group_header > td,
+    .o_list_table tbody > tr.o_group_header > th,
+    .o_list_table tbody > tr.o_group_header > td {
+        background-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_list_table tbody > tr.o_group_header .o_group_name,
+    .o_list_table tbody > tr.o_group_header .o_group_caret,
+    .o_list_table tbody > tr.o_group_header .o_pager {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .btn-primary {
+        background-color: $noi-dark-primary !important;
+        border-color: $noi-dark-primary !important;
+        color: #fff !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        background-color: lighten($noi-dark-primary, 5%) !important;
+        border-color: lighten($noi-dark-primary, 5%) !important;
+        color: #fff !important;
+    }
+
+    .btn-secondary,
+    .btn-outline-secondary,
+    .o_pager_previous,
+    .o_pager_next,
+    .o_cp_switch_buttons .btn {
+        background-color: $noi-dark-surface-alt !important;
+        border-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+        box-shadow: none !important;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus,
+    .btn-outline-secondary:hover,
+    .btn-outline-secondary:focus,
+    .o_pager_previous:hover,
+    .o_pager_next:hover,
+    .o_cp_switch_buttons .btn:hover {
+        background-color: lighten($noi-dark-surface-alt, 8%) !important;
+        border-color: lighten($noi-dark-surface-alt, 8%) !important;
+        color: #fff !important;
+    }
+
+    .o_cp_switch_buttons .btn.active {
+        background-color: mix($noi-dark-action, $noi-dark-bg, 15%) !important;
+        border-color: lighten($noi-dark-action, 10%) !important;
+        color: #fff !important;
+    }
+
+    .o_pager_counter,
+    .o_pager_value,
+    .o_pager_limit,
+    .text-muted,
+    .o-muted,
+    .text-secondary {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_pager_value,
+    .o_pager_limit {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_form_view .o_form_sheet_bg {
+        background: $noi-dark-bg !important;
+    }
+
+    .o_form_view .o_form_sheet_bg > .o_form_sheet,
+    .o_form_view .oe_button_box,
+    .o_ChatterContainer,
+    .o_Composer,
+    .o-mail-Composer {
+        background: $noi-dark-surface !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+        box-shadow: none !important;
+    }
+
+    .o_form_view .o_form_label,
+    .o_form_view .oe_title > h1,
+    .o_form_view .oe_title > .h1,
+    .o_form_view .o_group .o_td_label,
+    .o_form_view .o_field_widget,
+    .o_form_view .o_form_uri,
+    .o_form_view .o_form_uri > span:first-child {
+        color: $noi-dark-text !important;
+    }
+
+    .o_input,
+    .o_field_widget .o_input_dropdown > input,
+    .o_field_widget .o_input_dropdown .o_dropdown_button,
+    .o_field_widget input,
+    .o_field_widget textarea,
+    textarea,
+    select,
+    .form-control {
+        background-color: $noi-dark-bg !important;
+        border-color: $noi-dark-border-strong !important;
+        color: $noi-dark-text !important;
+        box-shadow: none !important;
+    }
+
+    .o_input:focus,
+    .o_field_widget .o_input_dropdown > input:focus,
+    .o_field_widget input:focus,
+    .o_field_widget textarea:focus,
+    textarea:focus,
+    select:focus,
+    .form-control:focus {
+        border-color: lighten($noi-dark-action, 10%) !important;
+        box-shadow: 0 0 0 0.2rem rgba($noi-dark-action, 0.15) !important;
+    }
+
+    .o_field_properties .o_field_property_label,
+    .o_field_properties .o_field_property_group_label,
+    .o_field_properties .o_field_property_open_popover,
+    .o_field_properties .oi-draggable {
+        color: $noi-dark-text !important;
+    }
+
+    .o_field_properties .o_field_property_group_label {
+        box-shadow: 0 1px 0 $noi-dark-border !important;
+    }
+
+    .o_field_properties .o_field_property_add .btn.btn-light {
+        background-color: $noi-dark-surface-alt !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+        box-shadow: none !important;
+    }
+
+    .o_field_properties .o_field_property_add .btn.btn-light:hover,
+    .o_field_properties .o_field_property_add .btn.btn-light:focus {
+        background-color: lighten($noi-dark-surface-alt, 6%) !important;
+        border-color: $noi-dark-border-strong !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_appraisal_form .o_appraisal_feedback {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_appraisal_form .o_appraisal_manager_feedback,
+    .o_appraisal_form .o_appraisal_manager_feedback .note-editable,
+    .o_appraisal_form .o_appraisal_manager_feedback .note-editor {
+        background-color: $noi-dark-surface-alt !important;
+    }
+
+    .o_appraisal_form .o_appraisal_feedback_title,
+    .o_appraisal_form .o_appraisal_feedback_title h1,
+    .o_appraisal_form .o_appraisal_feedback_title h2,
+    .o_appraisal_form .o_appraisal_feedback_title h3,
+    .o_appraisal_form .o_appraisal_feedback_title h4,
+    .o_appraisal_form .o_appraisal_feedback_title span,
+    .o_appraisal_form .o_appraisal_overlay {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_appraisal_form .o_appraisal_input,
+    .o_appraisal_form .o_appraisal_input .o_field_html,
+    .o_appraisal_form .o_appraisal_input .o_field_html .note-editor,
+    .o_appraisal_form .o_appraisal_input .o_field_html .note-editable,
+    .o_appraisal_form .o_appraisal_input .note-editable,
+    .o_appraisal_form .o_appraisal_input .note-editor,
+    .o_appraisal_form .o_appraisal_input .note-statusbar,
+    .o_appraisal_form .o_appraisal_input .note-toolbar {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        box-shadow: none !important;
+    }
+
+    .o_appraisal_form .o_appraisal_input .o_field_html,
+    .o_appraisal_form .o_appraisal_input .o_field_html *,
+    .o_appraisal_form .o_appraisal_input .note-editable,
+    .o_appraisal_form .o_appraisal_input .note-editable *,
+    .o_appraisal_form .o_appraisal_input .o_readonly,
+    .o_appraisal_form .o_appraisal_input .o_readonly * {
+        color: $noi-dark-text !important;
+    }
+
+    .o_appraisal_form .o_appraisal_input h1,
+    .o_appraisal_form .o_appraisal_input h2,
+    .o_appraisal_form .o_appraisal_input h3,
+    .o_appraisal_form .o_appraisal_input h4,
+    .o_appraisal_form .o_appraisal_input h5,
+    .o_appraisal_form .o_appraisal_input h6,
+    .o_appraisal_form .o_appraisal_input strong,
+    .o_appraisal_form .o_appraisal_input b {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_appraisal_form .o_appraisal_input table,
+    .o_appraisal_form .o_appraisal_input thead,
+    .o_appraisal_form .o_appraisal_input tbody,
+    .o_appraisal_form .o_appraisal_input tr,
+    .o_appraisal_form .o_appraisal_input th,
+    .o_appraisal_form .o_appraisal_input td {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .bg-view,
+    .bg-100,
+    .text-bg-100,
+    .o_notebook .nav,
+    .o_notebook .o_notebook_headers,
+    .o_notebook > .tab-content,
+    .o_notebook > .o_notebook_content,
+    .o_notebook .o_notebook_content,
+    .o_form_view .tab-content,
+    .o_form_view .tab-pane {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        background-image: none !important;
+    }
+
+    .o_notebook {
+        --notebook-link-border-color: transparent;
+        --notebook-link-border-color-active: #{$noi-dark-border-strong};
+        --notebook-link-border-color-hover: #{$noi-dark-surface-alt};
+        --notebook-link-border-color-active-accent: #{lighten($noi-dark-action, 10%)};
+    }
+
+    .o_notebook .nav-link,
+    .o_notebook .nav-tabs .nav-link {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_notebook .nav-link:hover,
+    .o_notebook .nav-link:focus,
+    .o_notebook .nav-tabs .nav-link:hover,
+    .o_notebook .nav-tabs .nav-link:focus {
+        background-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_notebook .nav-link.active,
+    .o_notebook .nav-item.show .nav-link,
+    .o_notebook .nav-tabs .nav-link.active {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text-strong !important;
+        border-bottom-color: $noi-dark-surface !important;
+    }
+
+    .o_notebook .nav-tabs,
+    .o_notebook .nav-tabs .nav-item,
+    .o_notebook .nav-tabs .nav-link,
+    .o_notebook .tab-content,
+    .o_notebook .tab-pane {
+        border-color: $noi-dark-border !important;
+    }
+
+    .o-mail-Chatter,
+    .o-mail-Chatter-content,
+    .o-mail-Chatter-top,
+    .o-mail-Chatter-top.shadow-sm,
+    .o-mail-Chatter-topbar,
+    .o-mail-Composer,
+    .o-mail-Composer-coreMain,
+    .o-mail-Composer-coreHeader,
+    .o-mail-Composer-footer,
+    .o-mail-Thread,
+    .o-mail-Thread-newMessage,
+    .o-mail-Message,
+    .o-mail-MessageList {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        background-image: none !important;
+    }
+
+    .o-mail-Chatter-top,
+    .o-mail-Chatter-topbar,
+    .o-mail-Composer {
+        border-color: $noi-dark-border !important;
+    }
+
+    .o-mail-Composer-input,
+    .o-mail-Composer textarea,
+    .o-mail-Composer input,
+    .o-mail-Composer .form-control {
+        background-color: $noi-dark-bg !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border-strong !important;
+    }
+
+    .o_hr_skills_group,
+    .o_group_resume,
+    .o_group_skills,
+    .o_field_resume_one2many,
+    .o_field_skills_one2many,
+    .o_field_resume_one2many .o_list_renderer,
+    .o_field_skills_one2many .o_list_renderer,
+    .o_field_resume_one2many .table-responsive,
+    .o_field_skills_one2many .table-responsive,
+    .o_field_resume_one2many .o_data_row,
+    .o_field_skills_one2many .o_data_row,
+    .o_field_resume_one2many .o_data_row td,
+    .o_field_skills_one2many .o_data_row td,
+    .o_field_resume_one2many .o_data_row th,
+    .o_field_skills_one2many .o_data_row th,
+    .o_field_resume_one2many .o_resume_line,
+    .o_field_skills_one2many .o_resume_line,
+    .o_field_resume_one2many .o_resume_group_header,
+    .o_field_skills_one2many .o_resume_group_header,
+    .o_field_resume_one2many .o_resume_timeline_cell,
+    .o_field_skills_one2many .o_resume_timeline_cell,
+    .o_field_skills_one2many [name="skills_header"],
+    .o_field_skills_one2many [name="skills_available"],
+    .o_field_skills_one2many [name="no_skills"],
+    table.o_skill_table,
+    table.o_skill_table > :not(caption) > * > *,
+    .o_hr_skills_dialog_form {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+    }
+
+    .o_field_resume_one2many .o_resume_line_title,
+    .o_field_resume_one2many .o_resume_line_dates,
+    .o_field_resume_one2many .o_resume_line_desc,
+    .o_field_skills_one2many .o_skill_cell,
+    .o_hr_skills_group .text-uppercase,
+    .o_hr_skills_group .fw-bolder {
+        color: $noi-dark-text !important;
+    }
+
+    .o_field_resume_one2many .o_resume_timeline_cell:before {
+        background-color: $noi-dark-border-strong !important;
+    }
+
+    .o_field_resume_one2many .btn-secondary,
+    .o_field_skills_one2many .btn-secondary,
+    .o_hr_skills_group .btn-secondary {
+        background-color: $noi-dark-surface-alt !important;
+        border-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_field_resume_one2many .o_progress,
+    .o_field_skills_one2many .o_progress {
+        background: $noi-dark-surface-alt !important;
+    }
+
+    .o_list_renderer {
+        --ListRenderer-thead-bg-color: #{$noi-dark-surface};
+        --ListRenderer-thead-border-end-color: #{$noi-dark-border};
+        --ListRenderer-tfoot-bg-color: #{$noi-dark-surface-alt};
+        --table-bg: #{$noi-dark-surface};
+    }
+
+    .table,
+    table,
+    .o_list_table,
+    .o_list_renderer .o_list_table {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_list_renderer .o_list_table thead,
+    .o_list_renderer .o_list_table thead tr,
+    .o_list_renderer .o_list_table thead th,
+    .o_list_renderer .o_optional_columns_dropdown_toggle {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text-strong !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+    }
+
+    .o_list_record_selector .form-check-input {
+        background-color: transparent !important;
+        border-color: rgba(255, 255, 255, 0.35) !important;
+        box-shadow: none !important;
+    }
+
+    .o_list_record_selector .form-check-input:hover,
+    .o_list_record_selector .form-check-input:focus {
+        border-color: lighten($noi-dark-action, 10%) !important;
+        box-shadow: 0 0 0 0.15rem rgba($noi-dark-action, 0.18) !important;
+    }
+
+    .o_list_record_selector .form-check-input:checked,
+    .o_list_record_selector .form-check-input:indeterminate {
+        background-color: $noi-dark-primary !important;
+        border-color: lighten($noi-dark-primary, 6%) !important;
+    }
+
+    .table thead th,
+    .table tbody td,
+    table thead th,
+    table tbody td,
+    .o_list_table thead th,
+    .o_list_table tbody td {
+        background-color: transparent !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_list_renderer .o_data_row.o_selected_row,
+    .o_list_renderer .o_data_row.o_data_row_selected,
+    .o_list_renderer .o_data_row.table-active,
+    .o_list_renderer .o_data_row.table-info {
+        --bs-table-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-accent-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-striped-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-striped-color: #{$noi-dark-text-strong};
+        --bs-table-hover-bg: #{mix($noi-dark-action, $noi-dark-bg, 24%)};
+        --bs-table-hover-color: #fff;
+        --bs-table-active-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-active-color: #fff;
+        background-color: mix($noi-dark-action, $noi-dark-bg, 18%) !important;
+        color: $noi-dark-text-strong !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_list_renderer .o_data_row.o_selected_row > .o_data_cell,
+    .o_list_renderer .o_data_row.o_data_row_selected > .o_data_cell,
+    .o_list_renderer .o_data_row.table-active > .o_data_cell,
+    .o_list_renderer .o_data_row.table-info > .o_data_cell,
+    .o_list_renderer .o_data_row.o_selected_row > .o_list_record_selector,
+    .o_list_renderer .o_data_row.o_data_row_selected > .o_list_record_selector,
+    .o_list_renderer .o_data_row.table-active > .o_list_record_selector,
+    .o_list_renderer .o_data_row.table-info > .o_list_record_selector {
+        --bs-table-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-accent-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-striped-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-striped-color: #{$noi-dark-text-strong};
+        --bs-table-hover-bg: #{mix($noi-dark-action, $noi-dark-bg, 24%)};
+        --bs-table-hover-color: #fff;
+        --bs-table-active-bg: #{mix($noi-dark-action, $noi-dark-bg, 18%)};
+        --bs-table-active-color: #fff;
+        background-color: var(--bs-table-bg) !important;
+        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg) !important;
+        color: $noi-dark-text-strong !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_list_renderer .o_data_row.o_selected_row .o_data_cell *,
+    .o_list_renderer .o_data_row.o_data_row_selected .o_data_cell *,
+    .o_list_renderer .o_data_row.table-active .o_data_cell *,
+    .o_list_renderer .o_data_row.table-info .o_data_cell *,
+    .o_list_renderer .o_data_row.o_selected_row a,
+    .o_list_renderer .o_data_row.o_data_row_selected a,
+    .o_list_renderer .o_data_row.table-active a,
+    .o_list_renderer .o_data_row.table-info a {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_search_panel {
+        border-right-color: $noi-dark-border !important;
+    }
+
+    .o_search_panel .list-group-item,
+    .o_search_panel .o_search_panel_section_header,
+    .o_search_panel .o_search_panel_category_value,
+    .o_search_panel .o_search_panel_field {
+        background-color: transparent !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_search_panel .list-group-item.active,
+    .o_search_panel .o_search_panel_category_value.active {
+        background-color: mix($noi-dark-action, $noi-dark-bg, 15%) !important;
+        color: #fff !important;
+    }
+
+    .o_kanban_renderer {
+        --Kanban-background: #{$noi-dark-bg};
+    }
+
+    .o_kanban_renderer .o_kanban_record > div:not(.o_dropdown_kanban),
+    .o_kanban_renderer .o_kanban_quick_create {
+        background-color: $noi-dark-surface !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_kanban_renderer .o_kanban_quick_create,
+    .o_kanban_renderer .o_kanban_quick_create .o_form_view,
+    .o_kanban_renderer .o_kanban_quick_create .o_field_widget,
+    .o_kanban_renderer .o_kanban_quick_create .o_input,
+    .o_kanban_renderer .o_kanban_quick_create input,
+    .o_kanban_renderer .o_kanban_quick_create textarea,
+    .o_kanban_renderer .o_kanban_quick_create .form-control,
+    .o_kanban_renderer .o_kanban_quick_create .o_form_sheet_bg,
+    .o_kanban_renderer .o_kanban_quick_create .o_form_sheet,
+    .o_kanban_renderer .o_kanban_record .oe_kanban_color_white,
+    .o_kanban_renderer .oe_kanban_badge,
+    .o_kanban_renderer .o_kanban_gamification,
+    .o_kanban_renderer .o_kanban_gamification.oe_kanban_color_white,
+    .o_kanban_renderer .oe_kanban_card.oe_kanban_badge.oe_kanban_color_white {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+        box-shadow: none !important;
+    }
+
+    .o_kanban_renderer .oe_kanban_badge a,
+    .o_kanban_renderer .oe_kanban_badge p,
+    .o_kanban_renderer .oe_kanban_badge h4,
+    .o_kanban_renderer .o_kanban_record_title,
+    .o_kanban_renderer .o_kanban_record_title *,
+    .o_kanban_renderer .oe_kanban_badge .o_kanban_record_title,
+    .o_kanban_renderer .oe_kanban_badge .o_kanban_record_subtitle,
+    .o_hr_employee_kanban .o_kanban_record_title,
+    .o_hr_employee_kanban .o_kanban_record_title *,
+    .o_kanban_renderer .o_kanban_gamification a,
+    .o_kanban_renderer .o_kanban_gamification p,
+    .o_kanban_renderer .o_kanban_gamification h4 {
+        color: $noi-dark-text !important;
+    }
+
+    .o_kanban_renderer .o_kanban_record_title,
+    .o_kanban_renderer .o_kanban_record_title * {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_card_header_title .o_primary,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_card_header_title_name,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_card_header_title_name * {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .container,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .row,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu div[class*="col-"] {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .o_kanban_card_manage_title,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .o_kanban_card_manage_title span,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu a,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu div[role="menuitem"] {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu a:hover,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu a:focus {
+        color: #fff !important;
+    }
+
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .o_kanban_card_manage_section + .o_kanban_card_manage_section,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .row.o_kanban_card_manage_settings,
+    .o_kanban_dashboard.o_pos_kanban .o_kanban_record .dropdown-menu .row.o_kanban_card_manage_settings div[class*="col-"] + div[class*="col-"] {
+        border-color: $noi-dark-border-strong !important;
+    }
+
+    .o_field_nocontent,
+    .o_field_nocontent p,
+    .oe_grey {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_view_sample_data .o_nocontent_help {
+        background-color: $noi-dark-surface !important;
+        box-shadow: 0 0 120px 100px rgba($noi-dark-bg, 0.86) !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_onboarding_container,
+    .o_onboarding_container.collapse.show {
+        background: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .o_onboarding,
+    .o_onboarding.o_onboarding_blue,
+    .o_onboarding_main {
+        background: linear-gradient(
+            135deg,
+            mix($noi-dark-surface, $noi-dark-bg, 90%) 0%,
+            mix($noi-dark-primary, $noi-dark-bg, 18%) 100%
+        ) !important;
+        color: $noi-dark-text !important;
+        border: 1px solid $noi-dark-border !important;
+        border-radius: 0.75rem !important;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28) !important;
+    }
+
+    .o_onboarding *,
+    .o_onboarding_main * {
+        color: inherit;
+    }
+
+    .o_onboarding .o_onboarding_step_title,
+    .o_onboarding .h1,
+    .o_onboarding .h2,
+    .o_onboarding .h3,
+    .o_onboarding h1,
+    .o_onboarding h2,
+    .o_onboarding h3,
+    .o_onboarding_main .o_onboarding_step_title {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_onboarding p,
+    .o_onboarding small,
+    .o_onboarding .text-muted,
+    .o_onboarding .o-muted,
+    .o_onboarding .o_onboarding_step_text,
+    .o_onboarding_main p,
+    .o_onboarding_main small {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_onboarding .btn,
+    .o_onboarding .o_onboarding_step_action,
+    .o_onboarding a.o_onboarding_all_done,
+    .o_onboarding_main .btn {
+        background-color: rgba($noi-dark-surface, 0.86) !important;
+        border-color: rgba($noi-dark-action, 0.55) !important;
+        color: $noi-dark-text-strong !important;
+        box-shadow: none !important;
+    }
+
+    .o_onboarding .btn:hover,
+    .o_onboarding .btn:focus,
+    .o_onboarding .o_onboarding_step_action:hover,
+    .o_onboarding .o_onboarding_step_action:focus,
+    .o_onboarding a.o_onboarding_all_done:hover,
+    .o_onboarding a.o_onboarding_all_done:focus,
+    .o_onboarding_main .btn:hover,
+    .o_onboarding_main .btn:focus {
+        background-color: mix($noi-dark-action, $noi-dark-bg, 18%) !important;
+        border-color: rgba($noi-dark-action, 0.8) !important;
+        color: #fff !important;
+    }
+
+    .o_onboarding .o_onboarding_btn_close,
+    .o_onboarding .o_onboarding_all_done > .fa,
+    .o_onboarding .fa,
+    .o_onboarding .oi,
+    .o_onboarding_main .fa,
+    .o_onboarding_main .oi {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_view_nocontent {
+        background-image: radial-gradient(
+            at 50% 50%,
+            rgba($noi-dark-bg, 0.84) 0px,
+            rgba($noi-dark-bg, 0.5) 100%
+        ) !important;
+    }
+
+    .o_view_nocontent .o_nocontent_help,
+    .o_view_nocontent .o_empty_custom_dashboard {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32) !important;
+    }
+
+    .o_view_nocontent .o_nocontent_help p,
+    .o_view_nocontent .o_nocontent_help div,
+    .o_view_nocontent .o_nocontent_help span {
+        color: $noi-dark-text !important;
+    }
+
+    .o_view_nocontent .o_view_nocontent_empty_folder,
+    .o_view_nocontent .o_view_nocontent_smiling_face,
+    .o_view_nocontent .o_view_nocontent_neutral_face {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_view_nocontent .o_view_nocontent_empty_folder:before,
+    .o_view_nocontent .o_view_nocontent_smiling_face:before,
+    .o_view_nocontent .o_view_nocontent_neutral_face:before {
+        filter: brightness(0) saturate(100%) invert(78%) sepia(7%) saturate(447%) hue-rotate(181deg) brightness(95%) contrast(90%);
+        opacity: 0.9;
+    }
+
+    .o_dashboards,
+    .o_dashboards .o_content,
+    .o_dashboards .o_website_dashboard,
+    .o_dashboards .o_website_dashboard_content,
+    .o_spreadsheet_dashboard_action,
+    .o_spreadsheet_dashboard_action .o_content,
+    .o_spreadsheet_dashboard_action .o_component_with_search_panel,
+    .o_spreadsheet_dashboard_action .o_renderer {
+        background-color: $noi-dark-bg !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_dashboards .o_box,
+    .o_dashboards .o_inner_box,
+    .o_dashboards .table,
+    .o_dashboards table,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid,
+    .o_spreadsheet_dashboard_action .o-spreadsheet-topbar,
+    .o_spreadsheet_dashboard_action .o-filter-menu,
+    .o_spreadsheet_dashboard_action .o-composer,
+    .o_spreadsheet_dashboard_action .o-selection-statistic {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+        box-shadow: none !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_spreadsheet_dashboard_search_panel,
+    .o_spreadsheet_dashboard_action .o_search_panel_section,
+    .o_spreadsheet_dashboard_action .o_search_panel_field,
+    .o_spreadsheet_dashboard_action .o_search_panel_category_value {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_search_panel_category_value:hover:not(.active) {
+        background-color: $noi-dark-surface-alt !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_search_panel_category_value.active {
+        background-color: mix($noi-dark-action, $noi-dark-bg, 15%) !important;
+        color: #fff !important;
+    }
+
+    .o_dashboards h1,
+    .o_dashboards h2,
+    .o_dashboards h3,
+    .o_dashboards h4,
+    .o_dashboards h5,
+    .o_dashboards h6,
+    .o_dashboards .lead,
+    .o_dashboards .text-dark,
+    .o_spreadsheet_dashboard_action h1,
+    .o_spreadsheet_dashboard_action h2,
+    .o_spreadsheet_dashboard_action h3,
+    .o_spreadsheet_dashboard_action h4,
+    .o_spreadsheet_dashboard_action h5,
+    .o_spreadsheet_dashboard_action h6,
+    .o_spreadsheet_dashboard_action .lead,
+    .o_spreadsheet_dashboard_action .text-dark,
+    .o_spreadsheet_dashboard_action .dashboard-loading-status {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_dashboards .table thead th,
+    .o_dashboards table thead th,
+    .o_dashboards .table tbody td,
+    .o_dashboards table tbody td {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_spreadsheet_dashboard_action .btn.btn-light,
+    .o_spreadsheet_dashboard_action .dropdown-toggle.btn,
+    .o_spreadsheet_dashboard_action .btn.btn-light:hover,
+    .o_spreadsheet_dashboard_action .btn.btn-light:focus,
+    .o_spreadsheet_dashboard_action .dropdown-toggle.btn:hover,
+    .o_spreadsheet_dashboard_action .dropdown-toggle.btn:focus {
+        background-color: $noi-dark-surface-alt !important;
+        border-color: $noi-dark-surface-alt !important;
+        color: $noi-dark-text-strong !important;
+        box-shadow: none !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o-filter-value,
+    .o_spreadsheet_dashboard_action .o_multi_record_selector,
+    .o_spreadsheet_dashboard_action .o_multi_record_selector .badge,
+    .o_spreadsheet_dashboard_action .o_model_field_selector_chain_part,
+    .o_spreadsheet_dashboard_action .o_read_mode .o_tree_editor_condition,
+    .o_spreadsheet_dashboard_action .o_domain_selector input,
+    .o_spreadsheet_dashboard_action .o_input,
+    .o_spreadsheet_dashboard_action input,
+    .o_spreadsheet_dashboard_action select {
+        background-color: $noi-dark-bg !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border-strong !important;
+        box-shadow: none !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid .o-scrollbar.corner {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        box-shadow: none !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto {
+        background-color: #fff !important;
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto > canvas,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-figure-canvas {
+        background-color: transparent !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-grid-overlay,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-figure-border,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-dashboard-clickable-cell {
+        background-color: transparent !important;
+    }
+
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-figure,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-figure-wrapper *,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-topbar-composer *,
+    .o_spreadsheet_dashboard_action .o_renderer .o-spreadsheet .o-grid > .mx-auto .o-grid-composer * {
+        color: #111827 !important;
+    }
+
+    .o_timeoff_calendar,
+    .o_timeoff_calendar .o_calendar_container,
+    .o_timeoff_calendar .o_calendar_renderer,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget > .fc-view-container,
+    .o_timeoff_calendar .o_calendar_sidebar_container,
+    .o_timeoff_calendar .o_calendar_sidebar,
+    .o_timeoff_dashboard,
+    .o_timeoff_dashboard_cards,
+    .o_timeoff_dashboard .o_timeoff_card {
+        background-color: $noi-dark-surface !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+        background-image: none !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_sidebar_container,
+    .o_timeoff_dashboard {
+        box-shadow: inset 0 -1px 0 $noi-dark-border !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-head-container,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-view,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-bg,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-month-container > .fc-month,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-dayGridMonth-view,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-dayGridYear-view,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-more-popover,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-popover,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-widget-content,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-widget-header {
+        background-color: $noi-dark-surface !important;
+        border-color: $noi-dark-border !important;
+        color: $noi-dark-text !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-day-header,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-day-number,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-week-number,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-title,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-toolbar h2,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-more,
+    .o_timeoff_calendar .o_calendar_sidebar,
+    .o_timeoff_calendar .o_calendar_sidebar *,
+    .o_timeoff_calendar .o_calendar_filter h5,
+    .o_timeoff_calendar .o_calendar_filter li,
+    .o_timeoff_calendar .o_calendar_filter span,
+    .o_timeoff_calendar .o_cw_filter_title,
+    .o_timeoff_calendar .o_cw_filter_label,
+    .o_timeoff_dashboard .o_timeoff_name,
+    .o_timeoff_dashboard .o_timeoff_duration,
+    .o_timeoff_dashboard .o_timeoff_validity,
+    .o_timeoff_dashboard .o_timeoff_details,
+    .o_timeoff_dashboard .o_timeoff_card *,
+    .o_timeoff_dashboard strong,
+    .o_timeoff_dashboard span {
+        color: $noi-dark-text-strong !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_filter_item,
+    .o_timeoff_calendar .o_calendar_filter_items_checkall,
+    .o_timeoff_calendar .o_calendar_filter .o_remove {
+        background-color: transparent !important;
+        color: $noi-dark-text !important;
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_filter_item:hover,
+    .o_timeoff_calendar .o_calendar_filter_items_checkall:hover {
+        background-color: rgba(255, 255, 255, 0.04) !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget hr.fc-widget-header,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-time-grid .fc-slats .fc-minor td,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget th,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget td {
+        border-color: $noi-dark-border !important;
+    }
+
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-day-top.fc-other-month .fc-day-number,
+    .o_timeoff_calendar .o_calendar_renderer .o_calendar_widget .fc-other-month .fc-day-number {
+        color: $noi-dark-text-muted !important;
+    }
+
+    .o_timeoff_dashboard .btn.btn-secondary,
+    .o_timeoff_dashboard .o_timeoff_today_button,
+    .o_timeoff_calendar .btn.btn-secondary,
+    .o_timeoff_calendar .o_timeoff_today_button {
+        background-color: $noi-dark-surface-alt !important;
+        border-color: $noi-dark-border-strong !important;
+        color: $noi-dark-text-strong !important;
+        box-shadow: none !important;
+    }
+
+    .o_timeoff_dashboard .btn.btn-secondary:hover,
+    .o_timeoff_dashboard .o_timeoff_today_button:hover,
+    .o_timeoff_calendar .btn.btn-secondary:hover,
+    .o_timeoff_calendar .o_timeoff_today_button:hover {
+        background-color: lighten($noi-dark-surface-alt, 4%) !important;
+        border-color: $noi-dark-border-strong !important;
+        color: #fff !important;
+    }
+
+    .main-menu {
+        --mm-main-menu-background: linear-gradient(180deg, #10131d 0%, #000511 100%);
+        --mm-text: #{$noi-dark-text};
+        --mm-surface: rgba(255, 255, 255, 0.05);
+        --mm-border: rgba(255, 255, 255, 0.1);
+        --mm-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        --mm-search-bg: rgba(27, 29, 38, 0.9);
+        --mm-search-border: rgba(255, 255, 255, 0.08);
+        --mm-accent: #{$noi-dark-action};
+        --mm-input-text: #{$noi-dark-text};
+        --mm-input-placeholder: rgba(209, 209, 209, 0.58);
+        --mm-result-bg: rgba(255, 255, 255, 0.05);
+        --mm-result-border: rgba(255, 255, 255, 0.1);
+        --mm-result-hover: rgba(255, 255, 255, 0.08);
+        --mm-icon-bg: rgba(255, 255, 255, 0.05);
+        --mm-icon-border: transparent;
+    }
+}
