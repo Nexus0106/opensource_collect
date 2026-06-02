@@ -8,9 +8,9 @@
         Hide Delete Button from Action With Groups Access Right For ALl models from tree and form views
     """,
 
-    'author': "Sura",
+    'author': "ZbyE Solution",
 
-    'maintainer': 'Sura',
+    'maintainer': 'ZbyE Solution',
 
     'company':"ZbyE Solution",
 
