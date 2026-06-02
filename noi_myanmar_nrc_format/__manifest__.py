@@ -14,10 +14,10 @@ Features:
 - NRC Types (N, E, P, etc.)
 - Full NRC number composition on Sale Orders
     """,
-    "author": "NexOrioins Techsphere",
-    "maintainer": "Rowan Ember",
+    "author": "ZbyE Solution",
+    "maintainer": "ZbyE Solution",
     "website": "nexorionis.odoo.com",
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     "images": ["static/description/banner.png"],
     "license": "LGPL-3",
     "depends": ["base","contacts"],

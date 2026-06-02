@@ -7,10 +7,10 @@
         This module adds the ability to apply a fixed discount amount 
         on POS order lines instead of only percentage-based discounts.
     """,
-    "author": "NexOrioins Techsphere",
-    "maintainer": "Rowan Ember",
+    "author": "ZbyE Solution",
+    "maintainer": "ZbyE Solution",
     "website": "nexorionis.odoo.com",
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     "images": ["static/description/banner.jpg"],
     'license': 'LGPL-3',
     'depends': ['point_of_sale'],

@@ -9,10 +9,10 @@
         - Automatic discount calculation on sales orders
         - Discount flows to invoice with proper accounting
     """,
-    "author": "NexOrioins Techsphere",
-    "maintainer": "Rowan Ember",
+    "author": "ZbyE Solution",
+    "maintainer": "ZbyE Solution",
     "website": "nexorionis.odoo.com",
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     "images": ["static/description/banner.jpg"],
     'license': 'LGPL-3',
     'depends': ['sale_management', 'account'],
