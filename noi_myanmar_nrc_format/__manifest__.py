@@ -15,10 +15,10 @@ Features:
 - NRC Types (Naing, Pyuu, Ae, etc.)
 - Complete NRC field on Sale Order(Example)
     """,
-    "author": "NexOrioins Techsphere",
+    "author": "ZbyE Solution",
     "maintainer": "Rowan Ember",
     "website": "nexorionis.odoo.com",
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     "images": ["static/description/banner.png"],
     "license": "LGPL-3",
     "depends": ["contacts","base"],
