@@ -37,10 +37,10 @@ This module is essential for businesses operating in Myanmar that need to record
 customer NRC information in their sales transactions.
     """,
     'category': 'Localization',
-    "author": "NexOrioins Techsphere",
+    "author": "ZbyE Solution",
     "maintainer": "Rowan Ember",
     "website": "nexorionis.odoo.com",
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     'license': 'LGPL-3',
     'depends': [
         'base',

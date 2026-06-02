@@ -7,15 +7,15 @@
         This module automates the generation of payroll for all employees of a company.
         It schedules payroll runs for a given month and computes payslips for all employees.
     """,
-    'author': 'NexOrionis Techsphere',
+    'author': 'ZbyE Solution',
     
-    'company': 'NexOrionis Techsphere',
+    'company': 'ZbyE Solution',
     
     'maintainer': 'Rowan Ember',
     
     'website': 'https://nexorionis.odoo.com',
     
-    'email': 'nexorionis.info@gmail.com',
+    'email': 'zbye.info@gmail.com',
     
     'depends': ['hr','hr_payroll'],
     'data': [

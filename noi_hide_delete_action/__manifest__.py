@@ -12,9 +12,9 @@
 
     'maintainer': 'Sura',
 
-    'company':"NexOrionis Techsphere",
+    'company':"ZbyE Solution",
 
-    'email': 'nexorionis.info@gmail.com',
+    'email': 'zbye.info@gmail.com',
 
     'website': 'https://nexorionis.odoo.com',
 

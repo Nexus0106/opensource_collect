@@ -14,13 +14,13 @@
         'views/spare_part_stock_view.xml',
         'wizards/spare_part_confirm_wizard.xml',
     ],
-    'author': 'NexOrionis Techsphere',
+    'author': 'ZbyE Solution',
     
-    'company': 'NexOrionis Techsphere',
+    'company': 'ZbyE Solution',
     
     'maintainer': 'Rowan Ember',
 
-    'email': 'nexorionis.info@gmail.com',
+    'email': 'zbye.info@gmail.com',
     
     'website': 'https://nexorionis.odoo.com',
     'license': 'LGPL-3',
