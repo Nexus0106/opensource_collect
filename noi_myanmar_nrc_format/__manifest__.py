@@ -11,10 +11,11 @@
         - NRC Types (N, E, P, etc.)
         - Integration with Sale Orders
     """,
-    "author": "NexOrioins Techsphere",
+    "author": "ZbyE Solution",
+    "company": "ZbyE Solution",
     "maintainer": "Rowan Ember",
     "website": "nexorionis.odoo.com",
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     "license": "LGPL-3",
     "depends": ["contacts"],
     "data": [

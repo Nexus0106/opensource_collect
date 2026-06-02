@@ -6,9 +6,9 @@
 
     'summary': 'Disable Easy Create',
 
-    'author': 'NexOrionis Techsphere',
+    'author': 'ZbyE Solution',
     
-    'company': 'NexOrionis Techsphere',
+    'company': 'ZbyE Solution',
     
     'maintainer': 'Rowan Ember',
     
@@ -16,7 +16,8 @@
 
     'license': "LGPL-3",
 
-    'email': 'nexorionis.info@gmail.com',
+    'email': 'zbye.info@gmail.com',
+    'support': 'zbye.info@gmail.com',
 
     'category': 'Technichal/Settings',
 

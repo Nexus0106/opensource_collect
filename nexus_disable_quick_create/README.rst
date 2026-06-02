@@ -17,9 +17,11 @@ Credits
 Authors
 ~~~~~~~
 
-* NexOrionis Techsphere <nexorionis.info@gmail.com>
+* ZbyE Solution <zbye.info@gmail.com>
 
 Maintainers
 ~~~~~~~~~~~
 
-This module is maintained by the NecOrionis Techsphere.
+This module is maintained by ZbyE Solution.
+
+YouTube: https://www.youtube.com/@ZbyESolution

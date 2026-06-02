@@ -54,11 +54,12 @@ noi_pos_customer_scanner/
 ---
 
 ## 🏢 Company
-**NexOrionis Techsphere**  
+**ZbyE Solution**
 We specialize in Odoo development, custom modules, and business solutions.  
 
 - 🌍 Website: [https://nexorionis.odoo.com](https://nexorionis.odoo.com)  
-- 📧 Email: [nexorionis.info@gmail.com](mailto:nexorionis.info@gmail.com)  
+- 📧 Email: [zbye.info@gmail.com](mailto:zbye.info@gmail.com)
+- YouTube: [https://www.youtube.com/@ZbyESolution](https://www.youtube.com/@ZbyESolution)
 
 Maintainer: **Rowan Ember**  
 

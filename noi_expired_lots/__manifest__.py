@@ -5,13 +5,14 @@
     'summary': 'Expired lots in inventory dashboard.',
     'sequence': 100,
     'category': 'Inventory',
-    'author': 'NexOrionis Techsphere',
+    'author': 'ZbyE Solution',
 
-    'company': 'NexOrionis Techsphere',
+    'company': 'ZbyE Solution',
 
     'maintainer': 'Rowan Ember',
 
     'website': 'https://nexorionis.odoo.com',
+    'support': 'zbye.info@gmail.com',
     'depends': [
         'web',
         'stock',

@@ -23,10 +23,11 @@ customer is assigned a unique barcode/QR code for quick identification
 during checkout.
     """,
 
-    'author': 'NexOrionis Techsphere',
-    'company': 'NexOrionis Techsphere',
+    'author': 'ZbyE Solution',
+    'company': 'ZbyE Solution',
     'maintainer': 'Rowan Ember',
-    'email': 'nexorionis.info@gmail.com',
+    'email': 'zbye.info@gmail.com',
+    'support': 'zbye.info@gmail.com',
     'website': 'https://nexorionis.odoo.com',
     'license': 'LGPL-3',
 

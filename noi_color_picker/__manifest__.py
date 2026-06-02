@@ -9,11 +9,11 @@
         The selected color will be stored as a HEX value (e.g., #FF5733).
     """,
     'category': 'Tools',
-    'author': 'NexOrionis Techsphere',
-    'company': 'NexOrionis Techsphere',
+    'author': 'ZbyE Solution',
+    'company': 'ZbyE Solution',
     'maintainer': 'Rowan Ember',
     'website': 'nexorionis.odoo.com',
-    "support": "nexorionis.info@gmail.com",
+    "support": "zbye.info@gmail.com",
     'depends': [
         "web"
     ],
