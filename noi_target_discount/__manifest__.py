@@ -11,7 +11,7 @@
     """,
     "author": "ZbyE Solution",
     "maintainer": "ZbyE Solution",
-    "website": "nexorionis.odoo.com",
+    "website": "zbye.odoo.com",
     "support": "zbye.info@gmail.com",
     "images": ["static/description/banner.jpg"],
     'license': 'LGPL-3',
