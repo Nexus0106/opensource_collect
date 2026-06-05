@@ -16,7 +16,7 @@
 
     'email': 'zbye.info@gmail.com',
 
-    'website': 'https://nexorionis.odoo.com',
+    'website': 'https://zbye.odoo.com',
 
     'license': 'LGPL-3',
 

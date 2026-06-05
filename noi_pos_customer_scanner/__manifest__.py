@@ -27,7 +27,7 @@ during checkout.
     'company': 'ZbyE Solution',
     'maintainer': 'Rowan Ember',
     'email': 'zbye.info@gmail.com',
-    'website': 'https://nexorionis.odoo.com',
+    'website': 'https://zbye.odoo.com',
     'license': 'LGPL-3',
 
     "installable": True,
