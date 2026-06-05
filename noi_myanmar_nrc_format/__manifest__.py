@@ -6,7 +6,7 @@
     "category": "Sales",
     "author": "ZbyE Solution",
     "maintainer": "Rowan Ember",
-    "website": "nexorionis.odoo.com",
+    "website": "zbye.odoo.com",
     "support": "zbye.info@gmail.com",
     "images": ["static/description/banner.png"],
     "license": "LGPL-3",
