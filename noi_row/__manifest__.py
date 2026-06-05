@@ -15,7 +15,7 @@
     "license": "LGPL-3",
     "author": "ZbyE Solution",
     "company": "ZbyE Solution",
-    "website": "https://nexorionis.odoo.com",
+    "website": "https://zbye.odoo.com",
     "maintainer": "Rowan Ember",
     "support": "zbye.info@gmail.com",
     "installable": True,

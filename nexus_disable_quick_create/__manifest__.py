@@ -12,7 +12,7 @@
     
     'maintainer': 'Rowan Ember',
     
-    'website': 'https://nexorionis.odoo.com',
+    'website': 'https://zbye.odoo.com',
 
     'license': "LGPL-3",
 

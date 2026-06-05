@@ -14,7 +14,7 @@
     "author": "ZbyE Solution",
     "company": "ZbyE Solution",
     "maintainer": "Rowan Ember",
-    "website": "nexorionis.odoo.com",
+    "website": "zbye.odoo.com",
     "support": "zbye.info@gmail.com",
     "license": "LGPL-3",
     "depends": ["contacts"],

@@ -11,7 +11,7 @@
 
     'maintainer': 'Rowan Ember',
 
-    'website': 'https://nexorionis.odoo.com',
+    'website': 'https://zbye.odoo.com',
     'support': 'zbye.info@gmail.com',
     'depends': [
         'web',
